@@ -23,9 +23,8 @@ export default function loaderPerso() {
             const model = gltf.scene;
 
             scene.add(model);
-            model.position.set(23, 0, -13);
-            model.rotation.y += -0.3;
-            model.scale.set(0.85, 0.85, 0.85);
+            model.position.set(0, 0, 0);
+            model.rotation.y += -0.5;
 
             //Shadow on all objects----------------------------------------------------
             gltf.scene.traverse(function (node) {

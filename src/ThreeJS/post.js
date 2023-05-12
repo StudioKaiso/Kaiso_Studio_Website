@@ -189,18 +189,18 @@ function resizeRendererToDisplaySize(renderer) {
     const needResize = canvas.width !== width || canvas.height !== height;
 
     if (canvas.clientWidth <= 768 && canvas.clientWidth > 500) {
-        camera.position.set(23, 12, 8);
+        camera.position.set(-0.7, 16, 14);
         //camera.lookAt(0, 2, -4);
-        camera.rotation.x = -0.5;
+        camera.rotation.x = -0.8;
     }
     if (canvas.clientWidth > 768) {
-        camera.position.set(25, 10, 3);
+        camera.position.set(0, 10, 17);
         camera.rotation.x = -0.5;
-        //camera.lookAt(0, 2, -4);
+        //camera.lookAt(0, 0, 0);
         scene.fog = new THREE.Fog(0xA6B6D7, 10, 160);
     }
     if (canvas.clientWidth <= 500) {
-        camera.position.set(23, 30, 7);
+        camera.position.set(0, 30, 20);
         camera.rotation.x = -1;
         //camera.lookAt(0, 2, -4);
         scene.fog = new THREE.Fog(0xA6B6D7, 10, 150);
