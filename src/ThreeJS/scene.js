@@ -24,7 +24,7 @@ export default function loaderPerso() {
 
             scene.add(model);
             model.position.set(0, 0, 0);
-            model.rotation.y += -0.5;
+            model.rotation.x += 1;
 
             //Shadow on all objects----------------------------------------------------
             gltf.scene.traverse(function (node) {
@@ -298,8 +298,8 @@ export default function loaderPerso() {
 
             function animateRotation() {
 
-                target.x = (1 - mouse.x) * 0.0003;
-                target.y = (1 - mouse.y) * 0.0003;
+                target.x = (1 - mouse.x) * 0.0006;
+                target.y = (1 - mouse.y) * 0.0006;
 
                 model.rotation.x += 0.05 * (target.y - model.rotation.x);
                 model.rotation.y += 0.05 * (target.x - model.rotation.y);

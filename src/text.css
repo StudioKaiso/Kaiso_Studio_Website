@@ -39,7 +39,7 @@ button,
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 }
 
 h3 {
@@ -56,6 +56,10 @@ h5{
 
 p {
     font-size: 0.8rem;
+}
+
+#copyright{
+    font-size: 0.6rem;
 }
 
 li,
@@ -118,6 +122,10 @@ button {
     p {
         font-size: 0.8rem;
     }
+
+    #copyright{
+        font-size: 0.7rem;
+    }
 }
 
 /* DESKTOP */
@@ -150,5 +158,9 @@ button {
 
     p {
         font-size: 1rem;
+    }
+
+    #copyright{
+        font-size: 0.8rem;
     }
 }
