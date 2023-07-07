@@ -23,6 +23,10 @@ h5{
     line-height: 100%;
 }
 
+h6{
+    font-weight: 300;
+}
+
 h1,
 h2,
 h3 {
@@ -34,6 +38,7 @@ p,
 li,
 ul,
 button,
+h6,
 .language {
     font-family: 'Roboto', sans-serif;
 }
@@ -101,6 +106,14 @@ button {
     font-weight: 700;
 }
 
+.custom-h1{
+    font-size: 3rem;
+}
+
+.custom-h6{
+    font-size: 1.2rem;
+}
+
 /* TABLET */
 @media (min-width: 650px) and (max-width: 1200px) {
     li {
@@ -162,5 +175,13 @@ button {
 
     #copyright{
         font-size: 0.8rem;
+    }
+
+    .custom-h1{
+        font-size: 5rem;
+    }
+    
+    .custom-h6{
+        font-size: 2rem;
     }
 }

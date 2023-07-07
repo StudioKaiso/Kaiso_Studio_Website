@@ -39,8 +39,24 @@
     </header>
 
     <!--Background image-->
-    <img class="background-project" src="./Assets/Projets/Kaiso_Studio/Background.png"
-        style="object-fit: cover; width: 100%;">
+    <section style="background-image: url(./Assets/Projets/Kaiso_Studio/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;" class="flex center">
+        <div class="padding-responsive"
+            style="width: 60%; background-color: #A7B8D9; border: 1rem solid #000000; display: flex; justify-content: space-between;">
+            <div>
+                <h1 class="custom-h1">Kaiso Studio</h1>
+                <h6 class="custom-h6">Charte Graphique</h6>
+            </div>
+            <div class="center width-thirty">
+                <img src="./Assets/Logo_vertical_base.png" style="max-width: 50%; object-fit: contain;"
+                    class="display-only-desktop-tablet">
+            </div>
+        </div>
+    </section>
 
     <div class="space-fiverem"></div>
 
@@ -53,9 +69,83 @@
 
     <div class="space-threerem"></div>
 
-    <!--Welcoming text-->
-    <section class="margin wrap-only-phone only-phone-reversecolumn" style="justify-content: space-between;">
-        <p>A faire</p>
+    <!--Section of three column-->
+    <section class="only-phone-column wrap" style="justify-content: space-between; width: 80%;">
+        <article class="width-twenty center" style="padding: 3rem 0rem;">
+            <img src="./Assets/Logo_vertical_base.png" style="width: 70%; object-fit: contain;">
+        </article>
+        <div class="space-tworem display-only-phone"></div>
+
+        <article id="phase1" class="width-twenty-six center" style="background-color: #A7B8D9; min-height: 23rem;">
+            <h1 id="phase-logo1" style="font-size: 5rem; color: #F2F2F2;">1</h1>
+            <div class="column" id="phase-text1" style="justify-content: center; width: 100%; height: 100%; background-color: #F2F2F2; padding: 0rem 2rem; border: 0.5rem solid #A7B8D9;">
+                <div style="display: flex; width: 100%;" class="wrap phone-center tablet-center">
+                    <img src="./Assets/Projets/Kaiso_Studio/Plan.png" class="only-desktop-width-forty-five">
+                    <img src="./Assets/Projets/Kaiso_Studio/Plan2.png" class="only-desktop-width-forty-five display-only-desktop display-only-phone">
+                </div>
+                <div class="space-onerem"></div>
+                <h5 style="margin-bottom: 1rem; font-size: 1rem;">The blueprint, conveying meaning.</h5>
+                <p style="width: 100%; font-size: 0.8rem;">Kaiso is a family, strong feelings, the friendship between
+                    four young
+                    designers... And above all, Kaiso is an apartment. Our first headquarters, which is also a living
+                    space. This is where Kaiso was born, grew up, and matured...
+                    </br></br>
+                    At the core of this logo, we find this apartment, deconstructed into 4 blocks, following the
+                    architecture of the space.</p>
+            </div>
+        </article>
+
+        <div class="space-tworem display-only-phone"></div>
+        <article id="phase2" class="width-twenty-six center" style="background-color: #A7B8D9; min-height: 23rem;">
+            <h1 id="phase-logo2" style="font-size: 5rem; color: #F2F2F2;">2</h1>
+            <div class="phase-text column" id="phase-text2" style="justify-content: center; width: 100%; height: 100%; background-color: #F2F2F2; padding: 0rem 2rem; border: 0.5rem solid #A7B8D9;">
+                <h5 style="margin-bottom: 1rem; font-size: 1rem;">SOMETIMES PUZZLE, SOMETIMES INFOGRAPHIC...
+                </h5>
+                <p style="width: 100%; font-size: 0.8rem;">Each piece can be seen as a modular element, essential to the
+                    logo. This means that the pieces can be arranged in any way desired to adapt our identity to
+                    different mediums, using the blocks as graphic masses.
+                    </br></br>
+                    The logo also has an infographic meaning. Each color represents a group of rooms, hierarchically
+                    organized according to the time spent on them within our working hours. Please refer to the legend
+                    below.</p>
+                <div class="space-onerem"></div>
+                <div style="display: flex; justify-content: space-between;">
+                    <div class="column" style="width: 30%;">
+                        <div style="background-color: #BF0426; border: 0.3rem solid #000000; height: 3rem;"></div>
+                        <p style="text-align: center; width: 100%; font-size: 0.5rem; font-weight: bold;">PIECES IN
+                            WHICH WE SPEND +80% OF
+                            OUR TIME (OFFICE AND LIVING ROOM)</p>
+                    </div>
+                    <div class="column" style="width: 30%;">
+                        <div style="background-color: #A7B8D9; border: 0.3rem solid #000000; height: 3rem;"></div>
+                        <p style="text-align: center; width: 100%; font-size: 0.5rem; font-weight: bold;">HERE WE SPEND
+                            LESS THAN 20% OF OUR TIME (KITCHEN AND BATHROOM)</p>
+                    </div>
+                    <div class="column" style="width: 30%;">
+                        <div style="background-color: #F2F2F2; border: 0.3rem solid #000000; height: 3rem;"></div>
+                        <p style="text-align: center; width: 100%; font-size: 0.5rem; font-weight: bold;">BEDROOMS: WE
+                            NEVER WORK HERE (EXCEPT MIKE...)</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <div class="space-tworem display-only-phone"></div>
+        <article id="phase3" class="width-twenty-six center" style="background-color: #A7B8D9; min-height: 23rem;">
+            <h1 id="phase-logo3" style="font-size: 5rem; color: #F2F2F2;">3</h1>
+            <div class="phase-text column" id="phase-text3" style="justify-content: center; width: 100%; height: 100%; background-color: #F2F2F2; padding: 0rem 2rem; border: 0.5rem solid #A7B8D9;">
+                <h5 style="margin-bottom: 1.2rem; font-size: 1rem; text-align: center;">2 typefaces for 3 times more
+                    enjoyment.
+                </h5>
+                <p style="width: 100%; font-size: 0.8rem;">"Kaiso" is the name of our agency. The choice of the
+                    Righteous typeface resonates with our graphic references and our logo. The presence of simple curves
+                    breaks the straightness of the logo and other letters.
+                    </br></br>
+                    The "STUDIO," on the other hand, is written in Montserrat, a nod to Kaiso's very first graphic
+                    identity. This highly versatile typeface was the original font of the studio. We now use it more
+                    moderately.</p>
+            </div>
+        </article>
     </section>
 
     <div class="space-fiverem"></div>

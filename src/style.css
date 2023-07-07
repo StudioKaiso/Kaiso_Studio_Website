@@ -269,7 +269,7 @@ ul {
 }
 
 .case-five {
-    background-image: url("./Assets/Projets/Website/Website.png");
+    background-image: url("./Assets/Projets/Kaiso_Studio/Vignette.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -366,10 +366,6 @@ canvas {
     display: none;
 }
 
-#phase1, #phase2, #phase3{
-    min-height: 16rem;
-}
-
 /* ------------------- MOBILE FIRST ------------------- */
 .width-all-only-phone {
     width: 100%;
@@ -451,6 +447,10 @@ canvas {
     width: 100%;
 }
 
+.padding-responsive{
+    padding: 3rem 1.5rem;
+}
+
 /* ------------------- TABLET - DESKTOP ------------------- */
 @media (min-width: 650px) {
     .modal-content {
@@ -503,6 +503,10 @@ canvas {
 
     .width-twenty {
         width: 20%;
+    }
+
+    .width-twenty-four {
+        width: 24%;
     }
 
     .width-thirty-six {
@@ -620,6 +624,14 @@ canvas {
     .large-on-phone {
         width: 40%;
     }
+
+    .padding-responsive{
+        padding: 5rem 3rem;
+    }
+
+    .tablet-center{
+        justify-content: center;
+    }
 }
 
 
@@ -676,5 +688,13 @@ canvas {
 
     .large-on-phone {
         width: 30%;
+    }
+
+    .padding-responsive{
+        padding: 8rem 5rem;
+    }
+
+    .only-desktop-width-forty-five {
+        width: 45%;
     }
 }
