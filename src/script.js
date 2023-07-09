@@ -34,12 +34,22 @@ window.addEventListener("DOMContentLoaded", (event) => {
             up.style.transition = "all 0.5s";
             down.style.transition = "all 0.5s";
 
-            header.style.filter = 'blur(0px)';
+            let children = document.querySelector("body").children;
+            for (let i = 0; i < children.length; i++){
+                children[i].style.filter = 'blur(10px)';
+                header.style.filter = 'blur(0px)'
+            }
 
         } else {
             up.style.transform = 'rotate(0deg) scale(1)';
             down.style.transform = 'rotate(0deg) scale(1)';
             middle.style.visibility = 'visible';
+
+            let children = document.querySelector("body").children;
+            for (let i = 0; i < children.length; i++){
+                children[i].style.filter = 'blur(0px)';
+                header.style.filter = 'blur(0px)'
+            }
         }
     });
 

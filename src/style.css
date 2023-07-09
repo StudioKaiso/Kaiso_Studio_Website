@@ -277,7 +277,7 @@ ul {
 }
 
 .case-six {
-    background-image: url("./Assets/Projets/Website/Website.png");
+    background-image: url("./Assets/Projets/Ogres_Creteils/Vignette.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -353,7 +353,8 @@ canvas {
 
 .footer-index {
     position: absolute;
-    bottom: 0;
+    top: 90vh;
+    padding-bottom: 2rem;
 }
 
 .zoom{
