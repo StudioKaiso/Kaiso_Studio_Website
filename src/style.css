@@ -719,56 +719,65 @@ a {
 .character {
     background-repeat: no-repeat;
     background-size: cover;
-    width: 8rem;
-    height: 13rem
+    width: 13rem;
+    height: 20rem
+}
+
+.post_name{
+    font-size: 0.7rem;
+    font-weight: 300;
 }
 
 .character_adrien {
-    background-image: url('./Assets/Team/waiting_character.png');
+    background-image: url('./Assets/Team/Avatars/AdrienPose.png');
+    filter: brightness(120%);
 }
 
 .adrien_background {
     background-color: #F2F2F2;
-    background-image: url('./Assets/Logo_white.png');
+    background-image: url('./Assets/Team/Avatars/AdrienPoseBack.png');
     background-repeat: no-repeat;
     background-position: left;
-    background-size: contain;
+    background-size: 25vw;
 }
 
 .character_mike {
-    background-image: url('./Assets/Team/waiting_character_swipe.png');
+    background-image: url('./Assets/Team/Avatars/MikePose.png');
+    filter: brightness(120%);
 }
 
 .mike_background {
     background-color: #F2F2F2;
-    background-image: url('./Assets/Logo_white.png');
+    background-image: url('./Assets/Team/Avatars/MikePoseBack.png');
     background-repeat: no-repeat;
     background-position: right;
-    background-size: contain;
+    background-size: 25vw;
 }
 
 .character_isaac {
-    background-image: url('./Assets/Team/waiting_character.png');
+    background-image: url('./Assets/Team/Avatars/IsaacPose.png');
+    filter: brightness(120%);
 }
 
 .isaac_background {
     background-color: #F2F2F2;
-    background-image: url('./Assets/Logo_white.png');
+    background-image: url('./Assets/Team/Avatars/IsaacPoseBack.png');
     background-repeat: no-repeat;
     background-position: left;
-    background-size: contain;
+    background-size: 25vw;
 }
 
 .character_steeve {
-    background-image: url('./Assets/Team/waiting_character_swipe.png');
+    background-image: url('./Assets/Team/Avatars/SteevePose.png');
+    filter: brightness(120%);
 }
 
 .steeve_background {
     background-color: #F2F2F2;
-    background-image: url('./Assets/Logo_white.png');
+    background-image: url('./Assets/Team/Avatars/SteevePoseBack.png');
     background-repeat: no-repeat;
     background-position: right;
-    background-size: contain;
+    background-size: 25vw;
 }
 
 /* ------------------- TABLET + PHONE ------------------- */
@@ -1082,8 +1091,8 @@ a {
     }
 
     .character {
-        width: 5rem;
-        height: 8rem;
+        width: 8rem;
+        height: 12rem;
     }
 
     .mike_background, .adrien_background, .isaac_background, .steeve_background {
