@@ -24,7 +24,8 @@ export default function loaderPerso() {
 
             scene.add(model);
             model.position.set(0, 0, 0);
-            model.rotation.x += 1;
+            //model.rotation.x += 1;
+            model.rotation.y = -1*Math.PI;
 
             //Shadow on all objects----------------------------------------------------
             gltf.scene.traverse(function (node) {
@@ -35,26 +36,27 @@ export default function loaderPerso() {
             });
 
             const Steeve = model.children[0];
-            const Isaac = model.children[1];
-            const Adrien = model.children[2];
-            const Mike = model.children[3];
+            const Isaac = model.children[3];
+            const Adrien = model.children[7];
+            const Mike = model.children[9];
+            //console.log(model.children);
 
             //Steeve_Assets
-            const Steeve_Chair = model.children[4];
+            const Steeve_Chair = model.children[1];
 
             //Isaac_Assets
-            const Isaac_Pen = model.children[7];
-            const Isaac_Tablet = model.children[6];
+            const Isaac_Pen = model.children[5];
+            const Isaac_Tablet = model.children[4];
 
             //Adrien_Assets
-            const Adrien_Computer = model.children[9];
+            const Adrien_Computer = model.children[8];
 
             //Mike_Assets
             const Mike_Pen = model.children[12];
             const Mike_Paper = model.children[10];
 
 
-            console.log(model);
+            //console.log(model);
 
             idleAnimation_Steeve();
             idleAnimation_Isaac();
@@ -280,7 +282,7 @@ export default function loaderPerso() {
         }
         window.addEventListener('click', onClick, {passive: true});
 */
-
+/*
             const mouse = new THREE.Vector2();
             const target = new THREE.Vector2();
             const windowHalf = new THREE.Vector2(window.innerWidth / 2, window.innerHeight / 2);
@@ -310,7 +312,7 @@ export default function loaderPerso() {
                 requestAnimationFrame(animateRotation);
                 renderer.render(scene, camera);
 
-            }
+            }*/
 
 
         }, undefined,

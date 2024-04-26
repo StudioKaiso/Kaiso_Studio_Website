@@ -1,163 +1,161 @@
-import mediumZoom from 'medium-zoom'
+//Languages ----------------------------------------------------------
+function translate() {
+    var lg = localStorage.getItem("language");
+    console.log(lg);
 
-// ------------------------------ menu BURGER ------------------------------ //
+    if (lg === null || lg === undefined) {
+        localStorage.setItem("language", "fr");
+        console.log(localStorage.language);
+    }
 
-"use strict";
-window.addEventListener("DOMContentLoaded", (event) => {
-    /* menu */
-    const menu = document.getElementById("Menu");
-    const cmdMenu = document.getElementById("CmdMenu");
-    const Logo = document.getElementById("Logo");
-    const header = document.querySelector("header");
+    if (lg == "fr") {
+        $(".eng").hide();
+        $(".fr").show();
+        console.log("C'est en français");
+    }
 
-    /* menu BURGER ANIMATION */
-    //const Anim = document.getElementById("X");
+    if (lg == "eng") {
+        $(".fr").hide();
+        $(".eng").show();
+        console.log("It's in English");
+    }
+}
 
-    const up = document.getElementById("menu-up");
-    const middle = document.getElementById("menu-middle");
-    const down = document.getElementById("menu-down");
+translate();
 
-    //Count when the menu is clicked
-    var isChecked = 1;
 
-    cmdMenu.addEventListener('click', function () {
-        menu.style.display = (menu.style.display == 'none') ? 'inherit' : 'none';
 
-        isChecked += 1;
+$("#btn_fr").click(() => {
+    localStorage.setItem("language", "fr");
+    console.log(localStorage.language);
+    translate();
+})
 
-        /* menu BURGER ANIMATION */
-        if (isChecked % 2 == 0) {
-            up.style.transform = 'translate(0%, 400%) rotate(45deg)';
-            down.style.transform = 'translate(0%, 200%) rotate(-45deg)';
-            middle.style.visibility = 'hidden';
+$("#btn_eng").click(() => {
+    localStorage.setItem("language", "eng");
+    console.log(localStorage.language);
+    translate();
+})
 
-            up.style.transition = "all 0.5s";
-            down.style.transition = "all 0.5s";
 
-            let children = document.querySelector("body").children;
-            for (let i = 0; i < children.length; i++){
-                children[i].style.filter = 'blur(10px)';
-                header.style.filter = 'blur(0px)'
-            }
 
-        } else {
-            up.style.transform = 'rotate(0deg) scale(1)';
-            down.style.transform = 'rotate(0deg) scale(1)';
-            middle.style.visibility = 'visible';
+//Header onScroll display none--------------------------------------------------------------------------------------
+$(window).on("scroll", function () {
+    if ($(window).scrollTop() === 0) {
+        $("header .logo").show();
+        header.style.justifyContent = "space-between";
+    } else {
+        $("header .logo").hide();
+        header.style.justifyContent = "flex-end";
+    }
 
-            let children = document.querySelector("body").children;
-            for (let i = 0; i < children.length; i++){
-                children[i].style.filter = 'blur(0px)';
-                header.style.filter = 'blur(0px)'
-            }
-        }
-    });
-
-    //Loading page
-    window.onload = function () {
-        //Windows width
-        var ww = window.innerWidth; //In pixels
-        menu.style.display = (ww > 650) ? '' : 'none';
-        cmdMenu.style.display = (ww > 650) ? 'none' : '';
-    };
-    //Changing width
-    window.onresize = function () {
-        //Windows width
-        var ww = window.innerWidth; //In pixels
-        menu.style.display = (ww > 650) ? '' : 'none';
-        cmdMenu.style.display = (ww > 650) ? 'none' : '';
-    };
-
+    if ($(window).scrollTop() > $("#newHeader").offset().top - 80) {
+        document.querySelectorAll(".btn_header").forEach((button) => {
+            button.classList.add("blue");
+            button.classList.remove("white");
+        });
+        document.querySelector("header nav").classList.add("bg_header");
+        document.querySelector("header nav").classList.add("drop_shadow");
+    } else {
+        document.querySelectorAll(".btn_header").forEach((button) => {
+            button.classList.remove("blue");
+            button.classList.add("white");
+        });
+        document.querySelector("header nav").classList.remove("bg_header");
+        document.querySelector("header nav").classList.remove("drop_shadow");
+    }
 });
 
-mediumZoom('.zoom', {
-    margin: 20,
-    background: '#17222b',
-    scrollOffset: 40,
-});
-
-
-
-"use strict";
-window.addEventListener("DOMContentLoaded", (event) => {
-
-    const container1 = document.getElementById("phase1");
-    const logo1 = document.getElementById("phase-logo1");
-    const text1 = document.getElementById("phase-text1");
-
-    container1.addEventListener('touchstart', function () {
-        logo1.style.display = (logo1.style.display == 'none') ? 'inherit' : 'none';
-        text1.style.display = (text1.style.display == 'flex') ? 'inherit' : 'flex';
+if (!window.location.href.includes('index')) {
+    document.querySelectorAll(".btn_header").forEach((button) => {
+        button.classList.add("blue");
+        button.classList.remove("white");
     });
+    document.querySelector("header nav").classList.add("bg_header");
+    document.querySelector("header nav").classList.add("drop_shadow");
+}
 
-    container1.addEventListener('touchend', function () {
-        logo1.style.display = (logo1.style.display == 'block') ? 'inherit' : 'block';
-        text1.style.display = (text1.style.display == 'none') ? 'inherit' : 'none';
-    });
+//Burger Menu--------------------------------------------------------------------------------------
+$("#icons").click(() => {
+    document.querySelector("#header").classList.toggle("active");
+})
 
-    container1.addEventListener('mouseenter', function () {
-        logo1.style.display = (logo1.style.display == 'none') ? 'inherit' : 'none';
-        text1.style.display = (text1.style.display == 'flex') ? 'inherit' : 'flex';
-    });
-
-    container1.addEventListener('mouseleave', function () {
-        logo1.style.display = (logo1.style.display == 'block') ? 'inherit' : 'block';
-        text1.style.display = (text1.style.display == 'none') ? 'inherit' : 'none';
+document.querySelectorAll("header nav li").forEach((link) => {
+    link.addEventListener("click", () => {
+        header.classList.remove("active");
     });
 });
 
-"use strict";
-window.addEventListener("DOMContentLoaded", (event) => {
 
-    const container2 = document.getElementById("phase2");
-    const logo2 = document.getElementById("phase-logo2");
-    const text2 = document.getElementById("phase-text2");
 
-    container2.addEventListener('touchstart', function () {
-        logo2.style.display = (logo2.style.display == 'none') ? 'inherit' : 'none';
-        text2.style.display = (text2.style.display == 'flex') ? 'inherit' : 'flex';
-    });
-
-    container2.addEventListener('touchend', function () {
-        logo2.style.display = (logo2.style.display == 'block') ? 'inherit' : 'block';
-        text2.style.display = (text2.style.display == 'none') ? 'inherit' : 'none';
-    });
-
-    container2.addEventListener('mouseenter', function () {
-        logo2.style.display = (logo2.style.display == 'none') ? 'inherit' : 'none';
-        text2.style.display = (text2.style.display == 'flex') ? 'inherit' : 'flex';
-    });
-
-    container2.addEventListener('mouseleave', function () {
-        logo2.style.display = (logo2.style.display == 'block') ? 'inherit' : 'block';
-        text2.style.display = (text2.style.display == 'none') ? 'inherit' : 'none';
-    });
+//Swiper menu--------------------------------------------------------------------------------------
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
 });
 
-"use strict";
-window.addEventListener("DOMContentLoaded", (event) => {
-
-    const container3 = document.getElementById("phase3");
-    const logo3 = document.getElementById("phase-logo3");
-    const text3 = document.getElementById("phase-text3");
-
-    container3.addEventListener('touchstart', function () {
-        logo3.style.display = (logo3.style.display == 'none') ? 'inherit' : 'none';
-        text3.style.display = (text3.style.display == 'flex') ? 'inherit' : 'flex';
-    });
-
-    container3.addEventListener('touchend', function () {
-        logo3.style.display = (logo3.style.display == 'block') ? 'inherit' : 'block';
-        text3.style.display = (text3.style.display == 'none') ? 'inherit' : 'none';
-    });
-
-    container3.addEventListener('mouseenter', function () {
-        logo3.style.display = (logo3.style.display == 'none') ? 'inherit' : 'none';
-        text3.style.display = (text3.style.display == 'flex') ? 'inherit' : 'flex';
-    });
-    
-    container3.addEventListener('mouseleave', function () {
-        logo3.style.display = (logo3.style.display == 'block') ? 'inherit' : 'block';
-        text3.style.display = (text3.style.display == 'none') ? 'inherit' : 'none';
-    });
+/*
+//LE DESIGN C'EST QUOI HREF ------------------------------------------------------------------------------
+$('#swiper-slide-01').click(function (e) {
+    e.preventDefault();
+    location.href = "#";
+    return false;
 });
+$('#swiper-slide-02').click(function (e) {
+    e.preventDefault();
+    location.href = "#";
+    return false;
+});
+$('#swiper-slide-03').click(function (e) {
+    e.preventDefault();
+    location.href = "#";
+    return false;
+});
+$('#swiper-slide-04').click(function (e) {
+    e.preventDefault();
+    location.href = "#";
+    return false;
+});
+$('#swiper-slide-05').click(function (e) {
+    e.preventDefault();
+    location.href = "#";
+    return false;
+});
+$('#swiper-slide-06').click(function (e) {
+    e.preventDefault();
+    location.href = "#";
+    return false;
+});
+$('#swiper-slide-07').click(function (e) {
+    e.preventDefault();
+    location.href = "#";
+    return false;
+});
+$('#swiper-slide-08').click(function (e) {
+    e.preventDefault();
+    location.href = "#";
+    return false;
+});
+$('#swiper-slide-09').click(function (e) {
+    e.preventDefault();
+    location.href = "#";
+    return false;
+});
+
+//NOS SERVICES HREF ------------------------------------------------------------------------------
+$('.service_case_01').click(function (e) {
+    e.preventDefault();
+    location.href = "./Design.html";
+    return true;
+});
+
+$('.service_case_02').click(function (e) {
+    e.preventDefault();
+    location.href = "#";
+    return false;
+});*/

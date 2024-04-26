@@ -73,7 +73,7 @@ export function post() {
     plane.rotation.x = -0.5 * Math.PI;
     plane.receiveShadow = true;
     plane.position.y += -0.1;
-    //scene.add(plane);
+    scene.add(plane);
 
     /*-----------------------------------------------Creation de brume---------------------------------------------------*/
     //scene.fog = new THREE.Fog(0x9794D6, 0, 70);
@@ -83,8 +83,8 @@ export function post() {
     scene.add(ambientlight);
 
     const light = new THREE.DirectionalLight(0XFFFFFF, 2);
-    light.position.set(50, 30, -10);
-    light.target.position.set(24, 0, -25);
+    light.position.set(10, 30, -10);
+    light.target.position.set(0, 0, -25);
 
     //Frustum Light
     light.shadow.camera.top = 5;
@@ -95,8 +95,8 @@ export function post() {
     light.shadow.camera.far = 45;
 
     //Shadow map resolution
-    light.shadow.mapSize.width = 1024
-    light.shadow.mapSize.height = 1024
+    light.shadow.mapSize.width = 2048;
+    light.shadow.mapSize.height = 2048;
 
     scene.add(light);
     scene.add(light.target);
@@ -122,14 +122,14 @@ export function post() {
     THREE.ColorManagement.enabled = true;
 
     renderer.physicallyCorrectLights = true;
-    renderer.outputEncoding = THREE.sRGBEncoding;
+    //renderer.outputEncoding = THREE.sRGBEncoding;
 
 
     /*Bloom*/
     const unrealBloomPass = new UnrealBloomPass();
     effectComposer.addPass(unrealBloomPass);
 
-    unrealBloomPass.strength = 0.1;
+    unrealBloomPass.strength = 0.14;
     unrealBloomPass.radius = 2;
     unrealBloomPass.threshold = 0.3;
 
@@ -188,25 +188,28 @@ function resizeRendererToDisplaySize(renderer) {
     const height = canvas.clientHeight;
     const needResize = canvas.width !== width || canvas.height !== height;
 
-    if (canvas.clientWidth <= 768 && canvas.clientWidth > 500) {
-        camera.position.set(-0.7, 16, 14);
-        //camera.lookAt(0, 2, -4);
-        camera.rotation.x = -0.8;
+    if (canvas.clientWidth <= 1024 && canvas.clientWidth > 650) {
+        camera.position.set(0, 21, 23);
+        camera.lookAt(-8, -2, 0);
+        //camera.rotation.x = -1;
+
+        scene.fog = new THREE.Fog(0xBE0426, 20, 100);
     }
-    if (canvas.clientWidth > 768) {
-        camera.position.set(0, 10, 17);
-        camera.rotation.x = -0.5;
+    if (canvas.clientWidth > 1024) {
+        camera.position.set(0, 21, 23);
+        //camera.rotation.x = -0.5;
 
         //camera.position.set(-2, 20, -20);
-        //camera.lookAt(-1, 0, -2);
+        camera.lookAt(-8, -2, 0);
 
-        scene.fog = new THREE.Fog(0xA6B6D7, 10, 160);
+        scene.fog = new THREE.Fog(0xBE0426, 20, 90);
     }
-    if (canvas.clientWidth <= 500) {
-        camera.position.set(-0.5, 45, 30);
-        camera.rotation.x = -1;
-        //camera.lookAt(0, 2, -4);
-        scene.fog = new THREE.Fog(0xA6B6D7, 10, 150);
+    if (canvas.clientWidth <= 650) {
+        camera.position.set(20, 40, 20);
+        camera.lookAt(-5, 0, -2);
+        //camera.rotation.x = -1;
+
+        scene.fog = new THREE.Fog(0xBE0426, 20, 180);
     }
 
     if (needResize) {

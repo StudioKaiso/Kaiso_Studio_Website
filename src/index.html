@@ -3,83 +3,129 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS links-->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./text.css">
-    <link rel="icon" type="image/png" href="./Assets/Logo_square.png"/>
+    <!--Fav Icon-->
+    <link rel="icon" type="image/png" href="./Assets/Logo_square.png" />
     <!--Font links-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="./Assets/Logo_square.png" />
+    <!--Jquery links-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>Kaiso Studio</title>
 </head>
 
-<body id="body" class="body-index" style="background-color: #A6B6D7; color: #F2F2F2">
-    <!--THREE.JS-->
-    <div style="position: absolute;">
-        <canvas id="c" style="height: 100vh; width: 100vw; z-index: 999;"></canvas>
-    </div>
+<body>
+    <!--Header links-->
+    <script type="module" src="custom-header.js"></script>
 
-    <!--Header-->
-    <header class="margin plan-three">
-        <a href="./index.html"><img id="Logo" src="./Assets/Logo_base_white.png"></a>
-        <div class="reversecolumn flex-end">
-            <nav id="Menu">
-                <a href="./services.html" class="side"><button class="btn btn-base">Services</button></a>
-                <a href="./projects.html" class="side"><button class="btn btn-base">Projects</button></a>
-                <a href="./acceuil_FR.html" class="side language"><button
-                        class="btn btn-base">FR</button></a>
-            </nav>
-            <div id="CmdMenu" class="center" title="Display/Hide the menu" style="height: 100%; width: 1.5rem;">
-                <!--<p id="X" class="center">+</p>-->
-                <div id="menu-up" class="menu-burger"></div>
-                <div id="menu-middle" class="menu-burger"></div>
-                <div id="menu-down" class="menu-burger"></div>
+    <!--CATCH PHRASE--------------------------------------------------------------------------------------------------->
+    <article style="position: relative; display: flex; flex-direction: column; align-items: center;">
+        <div class="margin home">
+            <h1 class="w50-60-100 white fr" style="font-size: 3rem;">STIMULONS VOTRE CRÉATIVITÉ</h1>
+            <h1 class="w50-60-100 white eng" style="font-size: 3rem;">STIMULATE YOUR CREATIVITY</h1>
+            <p style="margin-bottom: 2rem;" class="white fr">Grâce à nos designers <b>pluridisciplinaires</b> et
+                <b>multiculturels !</b></p>
+            <p style="margin-bottom: 2rem;" class="white eng">Thanks to our <b>multidisciplinary</b> and <b>multicultural</b>
+                designers!</p>
+            <a target="_blank" rel="noopener noreferrer" href="mailto:contact@kaisostudio.org"
+                class="btn btn_base white fr">Discutez avec nous &#10140;</a>
+            <a target="_blank" rel="noopener noreferrer" href="mailto:contact@kaisostudio.org"
+                class="btn btn_base white eng">Discuss wih us &#10140;</a>
+        </div>
+        <!--THREE.JS-->
+        <canvas id="c"></canvas>
+    </article>
+    <!--CATCH PHRASE FIN--------------------------------------------------------------------------------------------------->
+
+    <!--CITATION ------------------------------------------------------------------------------------------->
+    <div class="swiper mySwiper" id="newHeader">
+        <h3 class="fr" style="display: flex; width: 100%; justify-content: center; padding-top: 4rem;">Ils nous font
+            confiance</h3>
+        <h3 class="eng" style="display: flex; width: 100%; justify-content: center; padding-top: 4rem;">They trust us
+        </h3>
+        <div class="swiper-wrapper">
+            <!--Thomas N'DEM-->
+            <div class="swiper-slide" id="swiper-slide-01">
+                <section>
+                    <h4>Thomas N'Dem</h4>
+                    <h6 class="fr" style="margin-bottom: 1rem;">Co-Fondateur de Civipedia</h6>
+                    <h6 class="eng" style="margin-bottom: 1rem;">Co-Founder of Civipedia</h6>
+                    <img style="clip-path: circle(); margin-bottom: 3rem;" src="./Assets/Home/Thomas.png">
+                    <p class="citation fr">"Les transitions ont besoin de toutes les ressourses possibles et notamment
+                        de la belle boite à outils des designers de changement"</p>
+                    <p class="citation eng">"Transitions need all possible resources and in particular the beautiful
+                        toolbox of change designers"</p>
+                </section>
+            </div>
+
+            <!--Stéphane Gouret-->
+            <div class="swiper-slide" id="swiper-slide-02">
+                <section style="padding-bottom: 3rem;">
+                    <h4>Stéphane Gouret</h4>
+                    <h6 class="fr" style="margin-bottom: 1rem;">Directeur de l'Africa Design School</h6>
+                    <h6 class="eng" style="margin-bottom: 1rem;">Director of the Africa Design School</h6>
+                    <img style="clip-path: circle(); margin-bottom: 3rem;" src="./Assets/Home/Stephane.png">
+                    <p class="citation fr">"La créativité devient un outil stratégique pour les entreprises"</p>
+                    <p class="citation eng">"Creativity becomes a strategic tool for businesses"</p>
+                </section>
             </div>
         </div>
-    </header>
+    </div>
+    <!--CITATION FIN ------------------------------------------------------------------------------------------->
 
-    <!--Introduction-->
-    <section class="margin top-page-index wrap-only-phone plan-two" style="height: 60vh; align-items: flex-end;">
+    <!--Nos services ------------------------------------------------------------------------------------------------------->
+    <section class="background_pattern"
+        style="width: 100%; display: flex; justify-content: center; flex-direction: column; align-items: center; padding: 5rem 0;">
+        <article class="margin service_case drop_shadow">
+            <div class="half_desktop service_text">
+                <h3 style="font-size: 2rem; margin-bottom: 2rem;">Formations</h3>
+                <p class="fr" style="margin-bottom: 4rem;">Nous vous accompagnons pour que vous puissiez utiliser la
+                    méthode du
+                    <b>Design Thinking</b> dans vos travaux.</p>
+                <p class="eng" style="margin-bottom: 4rem;">We support you so that you can use the method of
+                    <b>Design Thinking</b> in your work.</p>
+                <a href="./Formation.html" class="btn_white btn_neomorph black fr">En savoir plus &#10140;</a>
+                <a href="./Formation.html" class="btn_white btn_neomorph black eng">Learn more &#10140;</a>
+            </div>
+            <div class="service_image service_image_01"></div>
+        </article>
 
-        <article class="width-thirty flex-end column"
-            style="background-color: #7e91ba74; border: 1px solid rgb(255, 255, 255); padding: 2rem; border-radius: 2rem; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);">
-            <div style="width: 100%">
-                <h1 style="line-height: 100%;" class="display-only-desktop-tablet">Kaiso Studio</h1>
-                <div class="space-onerem"></div>
-                <p class="align-onlyphone">Hi ! We are a <span>multidisciplinary design studio</span>. Our creations range from <span>traditional graphics to 3D modeling, including
-                    games and motion design</span>. I hope you enjoy your visit, feel free to contact us.</p>
+        <article class="margin service_case service_case_02 drop_shadow">
+            <div class="service_image service_image_02"></div>
+            <div class="half_desktop service_text">
+                <h3 class="fr" style="font-size: 2rem; margin-bottom: 2rem;">Notre ambition</h3>
+                <h3 class="eng" style="font-size: 2rem; margin-bottom: 2rem;">Our ambition</h3>
+                <p class="fr" style="margin-bottom: 4rem;">Nous avons pour objectif d’utiliser nos outils et
+                    méthodologies sur le
+                    continent Africain qui regorge d’opportunités.</p>
+                <p class="eng" style="margin-bottom: 4rem;">We aim to use our tools and methodologies on the
+                    African continent which is full of opportunities.</p>
+                <a href="./Ambition.html" class="btn_white btn_neomorph black fr">En savoir plus &#10140;</a>
+                <a href="./Team.html" class="btn_white btn_neomorph black eng">Learn more &#10140;</a>
             </div>
         </article>
     </section>
+    <!--Nos services FIN------------------------------------------------------------------------------------------------------->
 
-    <!--Footer-->
-    <footer class="margin plan-two footer-index">
-        <article style="display: flex;" class="large-on-phone">
-            <a href="" class="center">
-                <p id="copyright" style="color: #F2F2F2">©2023 Kaiso Studio. All Rights Reserved </br>Any reproduction is prohibited</p>
-            </a>
-        </article>
+    <!--Footer links-->
+    <script type="module" src="custom-footer.js"></script>
 
-        <article class="large-on-phone center" style="display: flex; justify-content: space-around;">
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/kaisostudio/"
-                class="center"><img class="icon" src="./Assets/Icons/Instagram.svg"></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/kaiso-studio/"
-                class="center"><img class="icon" src="./Assets/Icons/Linkedin.svg"></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/StudioKaiso" class="center"><img
-                    class="icon" src="./Assets/Icons/Twitter.svg"></a>
-            <a target="_blank" rel="noopener noreferrer" href="mailto:contact@kaisostudio.org" class="center"><img
-                    class="icon" src="./Assets/Icons/Mail.svg"></a>
-        </article>
-    </footer>
 </body>
 <!--JS links-->
 <script src="./script.js" type="module"></script>
+
+<!--ThreeJS links-->
 <script src="./ThreeJS/threeJS.js" type="module"></script>
+
+<!-- Swiper JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </html>
