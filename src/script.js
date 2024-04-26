@@ -5,35 +5,32 @@ function translate() {
 
     if (lg === null || lg === undefined) {
         localStorage.setItem("language", "fr");
-        console.log(localStorage.language);
+        return;
     }
 
     if (lg == "fr") {
         $(".eng").hide();
         $(".fr").show();
-        console.log("C'est en français");
     }
 
     if (lg == "eng") {
         $(".fr").hide();
         $(".eng").show();
-        console.log("It's in English");
     }
 }
 
+translate();
 translate();
 
 
 
 $("#btn_fr").click(() => {
     localStorage.setItem("language", "fr");
-    console.log(localStorage.language);
     translate();
 })
 
 $("#btn_eng").click(() => {
     localStorage.setItem("language", "eng");
-    console.log(localStorage.language);
     translate();
 })
 
