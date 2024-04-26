@@ -90,6 +90,21 @@ header nav {
     background-image: url("./Assets/Formation/Qualiopi_certification.png");
 }
 
+.photo_citation{
+    width: 4rem;
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thomas{
+    background-image: url("./Assets/Home/Thomas.png");
+}
+
+.stephane{
+    background-image: url("./Assets/Home/Stephane.png");
+}
+
 footer .logo {
     background-image: url("./Assets/Logo_vertical_sansStudio.png");
     width: 3rem;
