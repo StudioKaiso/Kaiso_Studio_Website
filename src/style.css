@@ -98,7 +98,8 @@ header nav {
 }
 
 .thomas{
-    background-image: url("./Assets/Home/Thomas.png");
+    /*background-image: url("./Assets/Home/Thomas.png");*/
+    background-image: url("./Assets/Logo.png");
 }
 
 .stephane{
