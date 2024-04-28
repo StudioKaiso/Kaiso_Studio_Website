@@ -158,6 +158,7 @@ footer .logo {
     background-image: url("./Assets/Formation/Notebook_background.png");
     background-position: bottom;
     background-size: contain;
+    height: 100%;
 }
 
 .banner_background_africa {
@@ -275,257 +276,6 @@ a {
     z-index: -1;
 }
 
-/*Slideshow -----------------------------------------------------------------*/
-.slideshow {
-    width: 100vw;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.container {
-    width: 500vw;
-    /* TOTAL WIDTH DES SECTIONS CITATIONS (1 CITATION = 100VW) */
-    position: relative;
-    -webkit-animation: slide 90s ease-in-out infinite;
-    -moz-animation: slide 90s ease-in-out infinite;
-    -ms-animation: slide 90s ease-in-out infinite;
-    -o-animation: slide 90s ease-in-out infinite;
-    animation: slide 20s ease-in-out infinite;
-}
-
-.citation {
-    text-align: center;
-    width: 50%;
-}
-
-.container section {
-    width: calc(100%/5);
-    height: 30vh;
-    float: left;
-}
-
-.slideshow {
-    background-color: #F2F2F2;
-    padding-bottom: 3rem;
-}
-
-.slideshow h4 {
-    text-align: center;
-}
-
-@-webkit-keyframes slide {
-    0% {
-        left: 0;
-    }
-
-    10% {
-        left: 0;
-    }
-
-    25% {
-        left: calc(-100%);
-    }
-
-    35% {
-        left: calc(-100%);
-    }
-
-    50% {
-        left: calc(-200%);
-    }
-
-    60% {
-        left: calc(-200%);
-    }
-
-    75% {
-        left: calc(-300%);
-    }
-
-    85% {
-        left: calc(-300%);
-    }
-
-    100% {
-        left: calc(-400%);
-    }
-}
-
-@-moz-keyframes slide {
-    0% {
-        left: 0;
-    }
-
-    10% {
-        left: 0;
-    }
-
-    25% {
-        left: calc(-100%);
-    }
-
-    35% {
-        left: calc(-100%);
-    }
-
-    50% {
-        left: calc(-200%);
-    }
-
-    60% {
-        left: calc(-200%);
-    }
-
-    75% {
-        left: calc(-300%);
-    }
-
-    85% {
-        left: calc(-300%);
-    }
-
-    100% {
-        left: calc(-400%);
-    }
-}
-
-@-ms-keyframes slide {
-    0% {
-        left: 0;
-    }
-
-    10% {
-        left: 0;
-    }
-
-    25% {
-        left: calc(-100%);
-    }
-
-    35% {
-        left: calc(-100%);
-    }
-
-    50% {
-        left: calc(-200%);
-    }
-
-    60% {
-        left: calc(-200%);
-    }
-
-    75% {
-        left: calc(-300%);
-    }
-
-    85% {
-        left: calc(-300%);
-    }
-
-    100% {
-        left: calc(-400%);
-    }
-}
-
-@-o-keyframes slide {
-    0% {
-        left: 0;
-    }
-
-    10% {
-        left: 0;
-    }
-
-    25% {
-        left: calc(-100%);
-    }
-
-    35% {
-        left: calc(-100%);
-    }
-
-    50% {
-        left: calc(-200%);
-    }
-
-    60% {
-        left: calc(-200%);
-    }
-
-    75% {
-        left: calc(-300%);
-    }
-
-    85% {
-        left: calc(-300%);
-    }
-
-    100% {
-        left: calc(-400%);
-    }
-}
-
-@keyframes slide {
-    0% {
-        left: 0;
-    }
-
-    10% {
-        left: 0;
-    }
-
-    25% {
-        left: calc(-100%);
-    }
-
-    35% {
-        left: calc(-100%);
-    }
-
-    50% {
-        left: calc(-200%);
-    }
-
-    60% {
-        left: calc(-200%);
-    }
-
-    75% {
-        left: calc(-300%);
-    }
-
-    85% {
-        left: calc(-300%);
-    }
-
-    100% {
-        left: calc(-400%);
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .5
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-.slideshow section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.slideshow section img {
-    width: 4rem;
-}
-
-/*FIN Slideshow -----------------------------------------------------------------*/
-
 .row_column {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -537,6 +287,11 @@ a {
 }
 
 /*Drag Slideshow -----------------------------------------------------------------*/
+.citation {
+    text-align: center;
+    width: 50%;
+}
+
 .swiper {
     width: 100%;
     background-color: #F2F2F2;
@@ -796,7 +551,7 @@ a {
 }
 
 /* ------------------- TABLET + PHONE ------------------- */
-@media (max-width: 1023px) {
+@media (max-device-width: 1023px) {
 
     body section article {
         display: flex;
@@ -934,7 +689,7 @@ a {
 }
 
 /* ------------------- TABLET ------------------- */
-@media (min-width: 650px) and (max-width: 1023px) {
+@media (min-device-width: 650px) and (max-device-width: 1023px) {
 
     .w50-60-100 {
         width: calc(55% + 3rem);
@@ -972,10 +727,14 @@ a {
     .information_case {
         justify-content: flex-start;
     }
+
+    .banner_background_formation {
+        background-position: center;
+    }
 }
 
 /* ------------------- PHONE ------------------- */
-@media (max-width: 650px) {
+@media (max-device-width: 650px) {
     .home {
         margin-top: 20vmax;
         margin-bottom: 40vmax;
@@ -1086,6 +845,10 @@ a {
 
     .article_home {
         margin-bottom: 10rem;
+    }
+
+    .banner_background_formation {
+        display: none;
     }
 
     .w70-70-100 {
