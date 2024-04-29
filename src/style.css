@@ -597,7 +597,7 @@ a {
     .icon_design_container {
         margin-top: 2rem;
         padding: 1.25rem 0;
-        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
+        flex-flow: column;
     }
 
     .icon_design_container p {
@@ -607,7 +607,7 @@ a {
     }
 
     .row_column {
-        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
+        flex-flow: column;
         flex-wrap: wrap;
         align-items: center;
     }
@@ -641,7 +641,7 @@ a {
     }
 
     footer .footer_info {
-        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
+        flex-flow: column;
     }
 
     footer .logo {
@@ -672,7 +672,7 @@ a {
         position: absolute;
         right: 0;
         top: 100%;
-        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
+        flex-flow: column;
         align-items: flex-end;
         transition: 0.25s;
         display: none;
@@ -690,7 +690,7 @@ a {
         -ms-display: flex;
         -o-display: flex;
         display: flex;
-        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
+        flex-flow: column;
         align-items: flex-start;
     }
 
@@ -787,7 +787,7 @@ a {
         -ms-display: flex;
         -o-display: flex;
         display: flex;
-        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
+        flex-flow: column;
         align-items: center;
     }
 
@@ -847,7 +847,7 @@ a {
     }
 
     .service_case_02 {
-        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
+        flex-flow: column;
     }
 
     /*FIN Services (Pedagogie + jeu mobile) cases -----------------------------------------------------------------*/
@@ -871,13 +871,13 @@ a {
     }
 
     .formation_case_02 {
-        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
+        flex-flow: column;
     }
 
     /*FORMATION -----------------------------------------------------------------*/
 
     .phone_column {
-        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
+        flex-flow: column;
     }
 
     .line {
@@ -905,7 +905,7 @@ a {
     }
 
     .information_section {
-        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
+        flex-flow: column;
     }
 
     .information_case {
