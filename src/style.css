@@ -26,12 +26,20 @@ body {
 }
 
 body {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 header {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
     justify-content: space-between;
 
@@ -43,6 +51,10 @@ header {
 }
 
 header nav {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
     justify-content: flex-end;
     align-self: center;
@@ -90,18 +102,18 @@ header nav {
     background-image: url("./Assets/Formation/Qualiopi_certification.png");
 }
 
-.photo_citation{
+.photo_citation {
     width: 4rem;
     height: 4rem;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.thomas{
+.thomas {
     background-image: url("./Assets/Home/Thomas.png");
 }
 
-.stephane{
+.stephane {
     background-image: url("./Assets/Home/Stephane.png");
 }
 
@@ -120,6 +132,10 @@ footer .logo {
 
 /*Flex*/
 .center {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,6 +315,10 @@ a {
 
 .swiper-slide {
     text-align: center;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -313,16 +333,25 @@ a {
     width: 4rem;
 }
 
-.swiper-slide section{
+.swiper-slide section {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3rem 0;
 }
+
 /*FIN Drag Slideshow -----------------------------------------------------------------*/
 
 /*Services (Pedagogie + jeu mobile) cases -----------------------------------------------------------------*/
 .service_case {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -364,8 +393,8 @@ a {
 }
 
 .service_image_02 {
-    background-image: url("./Assets/Home/Ambition.png");
-    background-size: contain;
+    background-image: url("./Assets/Home/Ambition.jpg");
+    background-size: cover;
     left: 0;
 }
 
@@ -373,6 +402,10 @@ a {
 
 /*FORMATION -----------------------------------------------------------------*/
 .formation_case {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -389,17 +422,8 @@ a {
 
 .formation_image {
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-    height: 16rem;
-}
-
-.formation_image_01 {
-    background-image: url("./Assets/Home/Formation.png");
-}
-
-.formation_image_02 {
-    background-color: #6c4048;
+    background-size: contain;
+    background-position: center;
 }
 
 /*FIN FORMATION -----------------------------------------------------------------*/
@@ -449,6 +473,10 @@ a {
 
 
 .case>div {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
     justify-content: space-between;
     color: #17222B;
@@ -473,6 +501,10 @@ a {
 .information_case {
     width: calc(100vw/3);
     min-height: calc(100vw/3);
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -493,7 +525,7 @@ a {
     height: 20rem
 }
 
-.post_name{
+.post_name {
     font-size: 0.7rem;
     font-weight: 300;
 }
@@ -554,6 +586,10 @@ a {
 @media (max-device-width: 1023px) {
 
     body section article {
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
+        -o-display: flex;
         display: flex;
         align-items: center;
     }
@@ -561,7 +597,7 @@ a {
     .icon_design_container {
         margin-top: 2rem;
         padding: 1.25rem 0;
-        flex-direction: column;
+        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
     }
 
     .icon_design_container p {
@@ -571,7 +607,7 @@ a {
     }
 
     .row_column {
-        flex-direction: column;
+        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
     }
@@ -605,7 +641,7 @@ a {
     }
 
     footer .footer_info {
-        flex-direction: column;
+        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
     }
 
     footer .logo {
@@ -636,7 +672,7 @@ a {
         position: absolute;
         right: 0;
         top: 100%;
-        flex-direction: column;
+        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
         align-items: flex-end;
         transition: 0.25s;
         display: none;
@@ -649,8 +685,12 @@ a {
     }
 
     header.active .btn_header {
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
+        -o-display: flex;
         display: flex;
-        flex-direction: column;
+        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
         align-items: flex-start;
     }
 
@@ -681,6 +721,10 @@ a {
     }
 
     header.active nav {
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
+        -o-display: flex;
         display: flex;
         padding: 4rem 2rem;
     }
@@ -689,7 +733,7 @@ a {
 }
 
 /* ------------------- TABLET ------------------- */
-@media (min-device-width: 650px) and (max-device-width: 1023px) {
+@media (min-device-width: 650px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
 
     .w50-60-100 {
         width: calc(55% + 3rem);
@@ -734,12 +778,16 @@ a {
 }
 
 /* ------------------- PHONE ------------------- */
-@media (max-device-width: 650px) {
+@media (max-device-width: 650px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
     .home {
         margin-top: 20vmax;
         margin-bottom: 40vmax;
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
+        -o-display: flex;
         display: flex;
-        flex-direction: column;
+        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
         align-items: center;
     }
 
@@ -799,7 +847,7 @@ a {
     }
 
     .service_case_02 {
-        flex-direction: column;
+        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
     }
 
     /*FIN Services (Pedagogie + jeu mobile) cases -----------------------------------------------------------------*/
@@ -823,13 +871,13 @@ a {
     }
 
     .formation_case_02 {
-        flex-direction: column;
+        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
     }
 
     /*FORMATION -----------------------------------------------------------------*/
 
     .phone_column {
-        flex-direction: column;
+        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
     }
 
     .line {
@@ -849,6 +897,7 @@ a {
 
     .banner_background_formation {
         display: none;
+        visibility: hidden;
     }
 
     .w70-70-100 {
@@ -856,7 +905,7 @@ a {
     }
 
     .information_section {
-        flex-direction: column;
+        -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
     }
 
     .information_case {
@@ -873,7 +922,10 @@ a {
         height: 12rem;
     }
 
-    .mike_background, .adrien_background, .isaac_background, .steeve_background {
+    .mike_background,
+    .adrien_background,
+    .isaac_background,
+    .steeve_background {
         background-image: none;
     }
 }

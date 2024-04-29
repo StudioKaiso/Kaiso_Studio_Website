@@ -1,7 +1,7 @@
 const template = document.createElement("template");
 template.innerHTML = `
-<footer style="display: flex; flex-direction: column; align-items: center;" class="drop_shadow">
-<div class="margin footer_info" style="display: flex; justify-content: space-between;">
+<footer style="-webkit-display: flex; -moz-display: flex; -ms-display: flex; -o-display: flex; display: flex; flex-direction: column; align-items: center;" class="drop_shadow">
+<div class="margin footer_info" style="-webkit-display: flex; -moz-display: flex; -ms-display: flex; -o-display: flex; display: flex; justify-content: space-between;">
     <a class="logo" href="./index.html"></a>
     <section>
         <h5>Services</h5>
@@ -24,7 +24,7 @@ template.innerHTML = `
     </section>
 </div>
 
-<article style="display: flex; justify-content: space-around;">
+<article style="-webkit-display: flex; -moz-display: flex; -ms-display: flex; -o-display: flex; display: flex; justify-content: space-around;">
     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/kaisostudio/" class="icon" id="icon_01"></a>
     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/kaiso-studio/" class="icon" id="icon_02"></a>
     <a target="_blank" rel="noopener noreferrer" href="mailto:contact@kaisostudio.org" class="icon" id="icon_04"></a>
@@ -37,6 +37,10 @@ template.innerHTML = `
     footer{
         background-color: #F2F2F2; 
         width: 100%; 
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
+        -o-display: flex;
         display: flex; 
         justify-content: center; 
         padding-top: 7rem;
