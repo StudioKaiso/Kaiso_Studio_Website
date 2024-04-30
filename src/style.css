@@ -674,7 +674,7 @@ a {
 }
 
 /* ------------------- TABLET ------------------- */
-@media (min-width: 650px) and (max-width: 1023px) and (-webkit-min-pixel-ratio: 1) {
+@media (min-width: 650px) and (max-width: 1023px) {
 
     .w50-60-100 {
         width: calc(55% + 3rem);
@@ -719,7 +719,7 @@ a {
 }
 
 /* ------------------- PHONE ------------------- */
-@media (max-width: 650px) and (-webkit-min-pixel-ratio: 1) and (orientation: portrait) {
+@media (max-width: 650px) {
     .home {
         margin-top: 20vmax;
         margin-bottom: 40vmax;
