@@ -26,20 +26,12 @@ body {
 }
 
 body {
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 header {
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
     display: flex;
     justify-content: space-between;
 
@@ -51,10 +43,6 @@ header {
 }
 
 header nav {
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
     display: flex;
     justify-content: flex-end;
     align-self: center;
@@ -132,10 +120,6 @@ footer .logo {
 
 /*Flex*/
 .center {
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,13 +203,6 @@ li {
     align-items: center;
     justify-content: center;
 }
-
-/*
-header li a:hover {
-    padding: 0.4rem 1rem;
-    border-width: 0.2rem;
-    border-bottom: 0.2rem solid;
-}*/
 
 a {
     text-decoration: none;
@@ -315,10 +292,6 @@ a {
 
 .swiper-slide {
     text-align: center;
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -334,10 +307,6 @@ a {
 }
 
 .swiper-slide section {
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -348,10 +317,6 @@ a {
 
 /*Services (Pedagogie + jeu mobile) cases -----------------------------------------------------------------*/
 .service_case {
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -402,10 +367,6 @@ a {
 
 /*FORMATION -----------------------------------------------------------------*/
 .formation_case {
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -473,10 +434,6 @@ a {
 
 
 .case>div {
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
     display: flex;
     justify-content: space-between;
     color: #17222B;
@@ -501,10 +458,6 @@ a {
 .information_case {
     width: calc(100vw/3);
     min-height: calc(100vw/3);
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
     display: flex;
     justify-content: center;
     flex-direction: column;
