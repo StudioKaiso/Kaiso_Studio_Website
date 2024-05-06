@@ -75,13 +75,11 @@ if (!window.location.href.includes('index')) {
 //Burger Menu--------------------------------------------------------------------------------------
 $("#icons").click(() => {
     document.querySelector("#header").classList.toggle("active");
-    $("header .logo").hide();
 })
 
 document.querySelectorAll("header nav li").forEach((link) => {
     link.addEventListener("click", () => {
         header.classList.remove("active");
-        $("header .logo").show();
     });
 });
 
