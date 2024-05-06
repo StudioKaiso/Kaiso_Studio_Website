@@ -343,7 +343,6 @@ a {
 
 .service_image {
     background-repeat: no-repeat;
-    background-position: left;
     width: 50%;
     height: 100%;
 
@@ -354,12 +353,14 @@ a {
 .service_image_01 {
     background-image: url("./Assets/Home/Formation.png");
     background-size: cover;
+    background-position: right;
     right: 0;
 }
 
 .service_image_02 {
     background-image: url("./Assets/Home/Ambition.jpg");
     background-size: cover;
+    background-position: left;
     left: 0;
 }
 
