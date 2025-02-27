@@ -36,11 +36,13 @@ $("#btn_eng").click(() => {
 
 //Swiper menu--------------------------------------------------------------------------------------
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: "auto",
-    spaceBetween: 30,
+    slidesPerView: "2.5",
+    spaceBetween: 0,
     loop: true,
+    speed: 5000,
+    centeredSlides: true,
     autoplay: {
-        delay: 5000,
+        delay: 2000,
         disableOnInteraction: false,
     },
 });

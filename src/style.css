@@ -140,7 +140,11 @@ footer .logo {
 }
 
 .drop_shadow {
-    box-shadow: 0px 0px 20px #0000003e;
+    box-shadow: 4px 5px 20px 0px #1a326557, -11px -9px 44px #e0eaff;
+}
+
+.drop_shadow_alternatif {
+    box-shadow: 0 0 20px 2px #4f545e57;
 }
 
 .banner_background {
@@ -234,7 +238,21 @@ a {
     border-color: #F2F2F2;
 }
 
-.btn_base:hover {
+.btn_red{
+    padding: 0.5rem 1rem;
+
+    border-radius: 2rem;
+    border-width: 0.2rem;
+    border-style: solid;
+
+    align-items: center;
+
+    background-color: #BE0426;
+    color: #F2F2F2;
+    border-color: #BE0426;
+}
+
+.btn_base:hover, .btn_red:hover {
     background-color: #8A94D2;
     color: #F2F2F2;
     border-color: #8A94D2;
@@ -543,6 +561,7 @@ a {
 /*Drag Slideshow -----------------------------------------------------------------*/
 .swiper {
     width: 100%;
+    /*background-color: #F2F2F2;*/
     background-color: #F2F2F2;
 }
 
@@ -552,14 +571,6 @@ a {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
-
-.swiper-slide {
-    width: 100vw;
-}
-
-.swiper-slide img {
-    width: 4rem;
 }
 
 .swiper-slide section{
@@ -591,15 +602,10 @@ a {
     width: 50%;
 }
 
-.service_text {
-    width: 40%;
-    padding-left: 2rem;
-}
-
 .service_image {
     background-repeat: no-repeat;
     background-position: left;
-    width: 50%;
+    width: 40%;
     height: 100%;
 
     position: absolute;
@@ -607,15 +613,24 @@ a {
 }
 
 .service_image_01 {
-    background-image: url("./Assets/Home/Formation.png");
+    background-image: url("./Assets/Home/WebDesign.png");
     background-size: cover;
     right: 0;
+    background-position: center;
 }
 
 .service_image_02 {
-    background-image: url("./Assets/Home/Ambition.png");
-    background-size: contain;
+    background-image: url("./Assets/Home/Branding.png");
+    background-size: cover;
     left: 0;
+    background-position: center;
+}
+
+.service_image_03 {
+    background-image: url("./Assets/Home/GameDesign.png");
+    background-size: cover;
+    right: 0;
+    background-position: center;
 }
 
 /*FIN Services (Pedagogie + jeu mobile) cases -----------------------------------------------------------------*/
@@ -718,6 +733,10 @@ a {
 
 .w70-70-100 {
     width: 70%;
+}
+
+.padding-phone{
+    padding-top: 0;
 }
 
 .information_case {
@@ -1086,6 +1105,10 @@ a {
 
     .w70-70-100 {
         width: 100%;
+    }
+
+    .padding-phone{
+        padding-top: 2rem;
     }
 
     .information_section {
