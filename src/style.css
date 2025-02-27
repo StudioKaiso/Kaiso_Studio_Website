@@ -59,27 +59,27 @@ header nav {
 }
 
 .icon {
-    width: 0.65rem;
+    width: 0.2rem;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
-    margin: 2rem 0.7rem;
+    margin: 1rem 0.5rem;
 }
 
 #icon_01 {
-    background-image: url("./Assets/Icons/Instagram_black.svg");
+    background-image: url("./Assets/Icons/Instagram.svg");
 }
 
 #icon_02 {
-    background-image: url("./Assets/Icons/Linkedin_black.svg");
+    background-image: url("./Assets/Icons/Linkedin.svg");
 }
 
 #icon_03 {
-    background-image: url("./Assets/Icons/Twitter_black.svg");
+    background-image: url("./Assets/Icons/Twitter.svg");
 }
 
 #icon_04 {
-    background-image: url("./Assets/Icons/Mail_black.svg");
+    background-image: url("./Assets/Icons/Mail.svg");
 }
 
 #icon_05 {
@@ -811,6 +811,35 @@ a {
     background-size: contain;
 }
 
+.call_icon, .v_icon, .world_icon{
+    width: 0.7rem;
+    height: 0.7rem;
+    background: no-repeat;
+    background-size: cover;
+}
+
+.call_icon{
+    background-image: url('./Assets/Icons/Phone.svg');
+}
+
+.v_icon{
+    width: 0.5rem;
+    height: 0.5rem;
+    background-image: url('./Assets/Icons/v.png');
+    background-size: contain;
+    background-position: center;
+    margin-left: 0.5rem;
+}
+
+.world_icon{
+    background-image: url('./Assets/Icons/World.png');
+    margin-right: 0.5rem;
+}
+
+.english_phone{
+    display: block;
+}
+
 /* ------------------- TABLET + PHONE ------------------- */
 @media (max-width: 1023px) {
 
@@ -864,19 +893,6 @@ a {
         width: 2.6rem;
         height: 2.6rem;
     }
-
-    footer .footer_info {
-        flex-direction: column;
-    }
-
-    footer .logo {
-        margin: 0 auto;
-    }
-
-    footer section {
-        padding-top: 2rem;
-    }
-
 
     #icons {
         display: block;
@@ -1132,5 +1148,21 @@ a {
 
     .mike_background, .adrien_background, .isaac_background, .steeve_background {
         background-image: none;
+    }
+
+    footer .footer_info {
+        flex-direction: column;
+    }
+
+    footer .logo {
+        margin: 0 auto;
+    }
+
+    footer section {
+        padding-top: 2rem;
+    }
+
+    .english_phone{
+        display: none;
     }
 }

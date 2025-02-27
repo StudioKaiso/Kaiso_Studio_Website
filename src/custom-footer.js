@@ -4,34 +4,58 @@ template.innerHTML = `
 <div class="margin footer_info" style="display: flex; justify-content: space-between;">
     <a class="logo" href="./index.html"></a>
     <section>
-        <h5>Services</h5>
-        <ul>
-            <a class="fr" href="./methodology.html"><li>Méthodologies</li></a>
-            <a class="eng" href="./methodology.html"><li>Methodology</li></a>
-            <a class="fr" href="./Ambition.html"><li>Notre ambition</li></a>
-            <a class="eng" href="./Ambition.html"><li>Our ambition</li></a>
+        <h5 class="fr">Contactez-nous</h5>
+        <h5 class="eng">Contat us</h5>
+        <ul class="center" style="flex-direction: column; margin-top: 0.5rem;">
+            <a href="callto:+33611823857" class="tag" style="background-color: white; color: black; margin-top: 0.5rem; max-width: 9rem; min-width: 8rem; display: flex; align-items: center;">
+                <div style="margin-left: 0.5rem;" class="call_icon"></div>
+                <p style="margin-left: 0.6rem;">+33 6 11 82 38 57</p>
+            </a>
+
+            <a target="_blank" rel="noopener noreferrer" href="mailto:contact@kaisostudio.org" class="tag" style="background-color: white; color: black; margin-top: 0.5rem; max-width: 9rem; min-width: 8rem;">
+                <p>contact@kaisostudio.org</p>
+            </a>
         </ul>
     </section>
 
     <section>
         <h5 class="fr">À propos</h5>
         <h5 class="eng">About us</h5>
-        <ul>
-            <a class="fr" href="./Team.html"><li>L'équipe</li></a>
-            <a class="eng" href="./Team.html"><li>The team</li></a>
-            <li class="fr">Nos droits</li>
-            <li class="eng">Our rights</li>
+        <ul style="margin-top: 0.5rem;">
+            <a style="text-decoration-line: underline;" href="./Team.html"><li>Branding</li></a>
+            <a style="text-decoration-line: underline;" href="./Team.html"><li>Web Design</li></a>
+            <a style="text-decoration-line: underline;" href="./Team.html"><li>Game Design</li></a>
         </ul>
     </section>
 </div>
 
 <article style="display: flex; justify-content: space-around;">
+<a target="_blank" rel="noopener noreferrer" href="mailto:contact@kaisostudio.org" class="icon" id="icon_04"></a>
     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/kaisostudio/" class="icon" id="icon_01"></a>
     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/kaiso-studio/" class="icon" id="icon_02"></a>
-    <a target="_blank" rel="noopener noreferrer" href="mailto:contact@kaisostudio.org" class="icon" id="icon_04"></a>
 </article>
 
-<p>Kaiso Studio © 2024</p>
+<div style="width: 100vw; height: 0.1rem; background-color: white; margin-bottom: 1rem;"></div>
+
+<div class="margin" style="display: flex; justify-content: space-between;">
+    <a href="" id="btn_eng" class="fr center" style="text-decoration-line: underline;">
+        <div class="world_icon"></div>
+        <p class="english_phone">Français</p>
+        <div class="v_icon english_phone"></div>
+    </a>
+    <a href="" id="btn_fr" class="eng center" style="text-decoration-line: underline;">
+        <div class="world_icon"></div>
+        <p class="english_phone">English</p>
+        <div class="v_icon english_phone"></div>
+    </a>
+
+    <div class="center">
+        <a style="text-decoration-line: underline;" href="./Team.html"><p style="margin-right: 0.5rem;">Mentions légales</p></a>
+        <a style="text-decoration-line: underline;" href="./Team.html"><p style="margin-left: 0.5rem;">Confidentialités</p></a>
+    </div>
+
+    <p>©Kaiso Studio</p>
+</div>
 </footer>
 
 <style>
