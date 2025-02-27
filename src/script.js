@@ -35,8 +35,14 @@ $("#btn_eng").click(() => {
 })
 
 //Swiper menu--------------------------------------------------------------------------------------
+
+let nbSlides = "2.5";
+if(window.screen.width < 650) nbSlides = "1";
+if(window.screen.width <=1023 && window.screen.width >=650) nbSlides = "1.5";
+if(window.screen.width > 1023) nbSlides = "2.5"
+
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: "2.5",
+    slidesPerView: nbSlides,
     spaceBetween: 0,
     loop: true,
     speed: 5000,

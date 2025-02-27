@@ -151,10 +151,10 @@ footer .logo {
     background-repeat: no-repeat;
 }
 
-.banner_background_formation {
-    background-image: url("./Assets/Formation/Notebook_background.png");
-    background-position: bottom;
-    background-size: contain;
+.banner_background_webdesign {
+    background-image: url("./Assets/WebDesign/MockUP_ordi.png");
+    background-position: bottom right;
+    background-size: 70%;
 }
 
 .banner_background_africa {
@@ -578,6 +578,7 @@ a {
     flex-direction: column;
     align-items: center;
     padding: 3rem 0;
+    height: 17rem;
 }
 /*FIN Drag Slideshow -----------------------------------------------------------------*/
 
@@ -590,7 +591,7 @@ a {
 
     background-color: #F2F2F2;
     margin-top: 3rem;
-    padding: 3rem 2rem 5rem 2rem;
+    padding: 3rem 2rem;
 }
 
 .service_case_02 {
@@ -1048,7 +1049,7 @@ a {
 
     .service_case {
         margin-top: 2rem;
-        padding: 0;
+        padding: 0 0 2rem 0;
         border-radius: 0;
 
         flex-direction: column-reverse;
