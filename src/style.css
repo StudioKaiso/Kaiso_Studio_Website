@@ -37,7 +37,7 @@ header {
 
     margin-top: 3rem;
     top: 0;
-    position: fixed;
+    position: absolute;
 
     z-index: 10;
 }
@@ -124,6 +124,10 @@ footer .logo {
 
 .violet {
     color: #8A94D2;
+}
+
+.red{
+    color: #BE0426;
 }
 
 .background_pattern {
@@ -257,6 +261,10 @@ a {
 
 .w40-60-100 {
     width: 40%;
+}
+
+.w30-60-100 {
+    width: 30%;
 }
 
 .home {
@@ -924,7 +932,7 @@ a {
 /* ------------------- TABLET ------------------- */
 @media (min-width: 650px) and (max-width: 1023px) {
 
-    .w50-60-100, .w40-60-100 {
+    .w50-60-100, .w40-60-100, .w30-60-100 {
         width: calc(55% + 3rem);
     }
 
@@ -977,7 +985,7 @@ a {
         text-align: center;
     }
 
-    .w50-60-100, .w40-60-100 {
+    .w50-60-100, .w40-60-100, .w30-60-100 {
         width: 100%;
     }
 
