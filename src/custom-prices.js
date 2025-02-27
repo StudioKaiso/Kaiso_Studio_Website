@@ -79,6 +79,14 @@ template.innerHTML = `
 			</div>
 		</div>
 	</div>
+
+	<div class = "drop_shadow center" style = "background-color: #FFFFFF; margin-top: 2rem; height: 16rem" >
+		<div class = "margin center" style = "flex-direction: column;">
+		<h2 class = "w50-60-100 fr" style = "text-align: center">Un devis personnalisé?</h2>
+		<h2 class = "w50-60-100 eng" style = "text-align: center">Need a personalized estimation?</h2>
+		<a class = "btn btn_base center fr" style = "margin-top: 1.5rem; padding: 0.5rem 0.5rem; width: 10rem">Lançons votre projet  &#10140;</a>
+		</div>
+	</div>
 </section>
 `
 document.body.appendChild(template.content)
