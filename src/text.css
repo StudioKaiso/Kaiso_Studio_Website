@@ -1,58 +1,61 @@
-*{
+* {
     font-size: calc(15px + 0.390625vw);
     margin: 0;
     padding: 0;
 }
 
-h1 {
+h1,
+h2 {
     font-family: 'Righteous', cursive;
     text-transform: uppercase;
     line-height: 100%;
     margin-bottom: 1rem;
     font-weight: 500;
+}
+
+h1 {
+
     font-size: 2.1rem;
 }
 
-h2{
-    font-family: 'Righteous', cursive;
-    text-transform: uppercase;
-    line-height: 100%;
-    margin-bottom: 1rem;
+h2 {
+    font-size: 1.8rem;
 }
 
-h4{
+h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
     padding: 0rem 3rem;
 }
 
-.citation{
+.citation {
     font-family: 'Roboto', sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
     padding: 0rem 3rem;
 }
 
-h3{
+h3 {
     font-family: 'Righteous', cursive;
     text-transform: uppercase;
     font-size: 1.25rem;
 }
 
-h5{
+h5 {
     font-family: 'Righteous', cursive;
     text-transform: uppercase;
     line-height: 100%;
 }
 
-h6{
+h6 {
     font-family: 'Roboto', sans-serif;
     font-size: 0.6rem;
     font-weight: 400;
 }
 
-.btn, .btn_white {
+.btn,
+.btn_white {
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
     font-weight: 500;
@@ -60,29 +63,30 @@ h6{
     display: inline-flex;
 }
 
-.btn:hover{
+.btn:hover {
     font-weight: 700;
 }
 
-p, b{
+p,
+b {
     font-family: 'Roboto', sans-serif;
     font-size: 0.8rem;
     line-height: 1.2rem;
 }
 
-footer li{
+footer li {
     font-family: 'Roboto', sans-serif;
     font-size: 0.7rem;
     font-weight: 400;
 }
 
-footer p{
+footer p {
     font-family: 'Roboto', sans-serif;
     font-size: 0.6rem;
     font-weight: 400;
 }
 
-.tag{
+.tag {
     font-family: 'Roboto', sans-serif;
     font-size: 0.7rem;
     font-weight: 400;
@@ -90,7 +94,7 @@ footer p{
 
 /* ------------------- TABLET + PHONE ------------------- */
 @media (max-width: 850px) {
-    .citation{
+    .citation {
         text-align: center;
     }
 
