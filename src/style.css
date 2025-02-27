@@ -224,7 +224,7 @@ a {
 
 /*FIN Burger Menu -----------------------------------------------------------------*/
 
-.btn_base {
+.btn_base, .btn_red, .btn_violet {
     padding: 0.5rem 1rem;
 
     border-radius: 2rem;
@@ -232,30 +232,36 @@ a {
     border-style: solid;
 
     align-items: center;
+}
 
+.btn_base{
     background-color: #F2F2F2;
     color: #8A94D2;
     border-color: #F2F2F2;
 }
 
 .btn_red{
-    padding: 0.5rem 1rem;
-
-    border-radius: 2rem;
-    border-width: 0.2rem;
-    border-style: solid;
-
-    align-items: center;
-
     background-color: #BE0426;
     color: #F2F2F2;
     border-color: #BE0426;
+}
+
+.btn_violet{
+    background-color: #8A94D2;
+    color: #F2F2F2;
+    border-color: #8A94D2;
 }
 
 .btn_base:hover, .btn_red:hover {
     background-color: #8A94D2;
     color: #F2F2F2;
     border-color: #8A94D2;
+}
+
+.btn_violet:hover{
+    background-color: #FFFFFF;
+    color: #8A94D2;
+    border-color: #FFFFFF;
 }
 
 .btn_neomorph {

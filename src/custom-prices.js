@@ -20,7 +20,7 @@ template.innerHTML = `
 
 				<p class = "fr" style = "margin-bottom: 1rem">Nous vous aidons à positionner votre marque selon les préférences de vos clients.</p>
 
-				<a class = "btn btn_base center fr" style = "padding: 0.5rem 0.5rem; width: 10rem">Lançons votre projet  &#10140;</a>
+				<a class = "btn btn_violet center fr" style = "padding: 0.5rem 0.5rem; width: 10rem">Lançons votre projet  &#10140;</a>
 			</div>
 
 			<div class = "margin">
@@ -44,7 +44,7 @@ template.innerHTML = `
 				<p class = "fr" style = "margin-bottom: 1rem">Nous conceptualisons votre site web et le prototypons sur FIGMA.</p>
 
 				<div style = "align-items: right">
-					<a class = "btn btn_base center fr" style = "padding: 0.5rem 0.5rem; width: 10rem">Lançons votre projet  &#10140;</a>
+					<a class = "btn btn_violet center fr" style = "padding: 0.5rem 0.5rem; width: 10rem">Lançons votre projet  &#10140;</a>
 				</div>
 			</div>
 
@@ -69,7 +69,7 @@ template.innerHTML = `
 
 				<p class = "fr" style = "margin-bottom: 1rem">Nous programmons vos jeux vidéos sur Unity, pour PC ou mobile.</p>
 
-				<a class = "btn btn_base center fr" style = "padding: 0.5rem 0.5rem; width: 10rem">Lançons votre projet  &#10140;</a>
+				<a class = "btn btn_violet center fr" style = "padding: 0.5rem 0.5rem; width: 10rem">Lançons votre projet  &#10140;</a>
 			</div>
 
 			<div class = "margin">
@@ -84,7 +84,8 @@ template.innerHTML = `
 		<div class = "margin center" style = "flex-direction: column;">
 		<h2 class = "w50-60-100 fr" style = "text-align: center">Un devis personnalisé?</h2>
 		<h2 class = "w50-60-100 eng" style = "text-align: center">Need a personalized estimation?</h2>
-		<a class = "btn btn_base center fr" style = "margin-top: 1.5rem; padding: 0.5rem 0.5rem; width: 10rem">Lançons votre projet  &#10140;</a>
+		<a class = "btn btn_violet center fr" style = "margin-top: 1.5rem; padding: 0.5rem 0.5rem; width: 10rem">Contactez-nous  &#10140;</a>
+		<a class = "btn btn_violet center eng" style = "margin-top: 1.5rem; padding: 0.5rem 0.5rem; width: 10rem">Contact us  &#10140;</a>
 		</div>
 	</div>
 </section>
