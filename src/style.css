@@ -139,6 +139,12 @@ footer .logo {
     background-attachment: fixed;
 }
 
+.price_arrow {
+    background-image: url("./Assets/Home/PriceBackground.png"); 
+    background-repeat: no-repeat;
+    height: 16rem; 
+}
+
 .drop_shadow {
     box-shadow: 4px 5px 20px 0px #1a326557, -11px -9px 44px #e0eaff;
 }
