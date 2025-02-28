@@ -166,6 +166,15 @@ footer .logo {
     min-width: 100vw;
 }
 
+.background_bloc_gamedesign {
+    background-image: url('./Assets/GameDesign/Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 120vh;
+    min-width: 100vw;
+}
+
 .banner_background_webdesign {
     background-image: url("./Assets/WebDesign/MockUP_ordi.png");
     background-position: bottom right;
@@ -176,6 +185,12 @@ footer .logo {
     background-image: url('./Assets/Branding/MockUP_Tablet.png');
     background-position: bottom right;
     background-size: 90%;
+}
+
+.banner_background_gamedesign {
+    background-image: url('./Assets/GameDesign/MockUP_Phones.png');
+    background-position: bottom right;
+    background-size: 80%;
 }
 
 .banner_background_africa {
@@ -312,6 +327,10 @@ a {
 }
 
 .w40-60-100 {
+    width: 40%;
+}
+
+.w40-40-85 {
     width: 40%;
 }
 
@@ -673,6 +692,13 @@ a {
     background-position: center;
 }
 
+.service_image_02 {
+    background-image: url("./Assets/Home/Branding.png");
+    background-size: cover;
+    left: 0;
+    background-position: center;
+}
+
 .webdesign_image_01 {
     background-image: url("./Assets/WebDesign/MockUP_Dev.png");
     background-size: cover;
@@ -923,6 +949,33 @@ a {
     align-items: flex-start;
 }
 
+.center_phone_sb_PC{
+    justify-content: space-between;
+}
+
+.only_PC_Tablet{
+    display: block;
+}
+
+.phone_pos{
+    position: absolute; 
+    right: -20%; 
+    bottom: -60%;
+}
+
+.rotate_Tablet, .rotate_Tablet2{
+    rotate: 0deg;
+}
+
+.rotate_Tablet2{
+    transform: scaleX(-1);
+}
+
+.on_phone_center_text{
+    text-align: start;
+}
+
+
 /* ------------------- TABLET + PHONE ------------------- */
 @media (max-width: 1023px) {
 
@@ -1078,6 +1131,10 @@ a {
         width: 50%;
     }
 
+    .w40-40-85 {
+        width: 40%;
+    }
+
     .logo {
         background-image: url("./Assets/Logo_square.png");
         width: 2.6rem;
@@ -1110,6 +1167,21 @@ a {
     .information_case {
         justify-content: flex-start;
     }
+
+    .phone_pos{
+        position: absolute;  
+        right: 0%;
+        bottom: -130%;
+    }
+
+    .rotate_Tablet{
+        rotate: -90deg;
+    }
+
+    .rotate_Tablet2{
+        transform: scaleX(1);
+        rotate: 90deg;
+    }
 }
 
 /* ------------------- PHONE ------------------- */
@@ -1127,6 +1199,10 @@ a {
         text-align: center;
     }
 
+    .on_phone_center_text{
+        text-align: center;
+    }
+
     .w50-60-100,
     .w40-60-100,
     .w30-60-100,
@@ -1136,6 +1212,9 @@ a {
         width: 100%;
     }
 
+    .w40-40-85 {
+        width: 85%;
+    }
 
     /*margins*/
     .margin {
@@ -1284,4 +1363,20 @@ a {
         justify-content: center;
         align-items: center;
     }
+
+    .only_PC_Tablet{
+        display: none;
+    }
+
+    .phone_pos{
+        position: absolute;  
+        right: 15%;
+        bottom: -130%;
+        rotate: -6.2deg;
+    }
+
+    .center_phone_sb_PC{
+        justify-content: center;
+    }
+    
 }
