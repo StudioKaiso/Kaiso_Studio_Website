@@ -139,10 +139,66 @@ footer .logo {
     background-attachment: fixed;
 }
 
+.price_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    margin: 2rem 0; 
+    height: 16rem;
+}
+
+.price {
+    display: flex; 
+    justify-content: space-between
+}
+
+.price.reverse {
+    display: flex; 
+    flex-direction: row-reverse;
+    justify-content: space-between
+}
+
+.price_text {
+    width: 35%; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.price_text.reverse {
+    text-align: right;
+}
+
 .price_arrow {
-    background-image: url("./Assets/Home/PriceBackground.png"); 
+    position: absolute; 
+    background-image: url("./Assets/Home/PriceBackground.png");
     background-repeat: no-repeat;
-    height: 16rem; 
+    background-size: contain;
+    left: 52%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1; 
+}
+
+.price_arrow.reverse {
+    transform: scaleX(-1);
+    left: 0; 
+    right: 52%;
+}
+
+.price_background {
+    background-color: #8A94D2;
+    position: absolute;
+    left: 54%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.price_background.reverse {
+    left: 0%; 
+    right: 54%;
 }
 
 .drop_shadow {
@@ -949,6 +1005,12 @@ a {
     align-items: flex-start;
 }
 
+.center_phone.reverse {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
 .center_phone_sb_PC{
     justify-content: space-between;
 }
@@ -1153,6 +1215,38 @@ a {
 
     /*FIN Projets cases -----------------------------------------------------------------------*/
 
+    .price_arrow {
+        position: absolute; 
+        background-image: url("./Assets/Home/PriceBackground.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        left: 40%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1; 
+    }
+    
+    .price_arrow.reverse {
+        transform: scaleX(-1);
+        left: 0; 
+        right: 40%;
+    }
+
+    .price_background {
+        background-color: #8A94D2;
+        position: absolute;
+        left: 42%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    
+    .price_background.reverse {
+        left: 0%; 
+        right: 42%;
+    }
+
     .banner_background_africa {
         background-position: 40vw 5rem;
         background-size: 40rem;
@@ -1343,6 +1437,56 @@ a {
         background-image: none;
     }
 
+    /*PRICES--------------------------------------------------------*/
+    
+    .price_container {
+        position: relative; 
+        margin: 2rem 0; 
+        padding: 5rem 0;
+        height: 25rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price, .price.reverse {
+        display: flex; 
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .price_text, .price_text.reverse {
+        width: 75vw; 
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .price_arrow, .price_arrow.reverse {
+        background-image: url("./Assets/Home/PriceBackgroundVertical.png");
+        background-position-x: 50%;
+        background-position-y: 60%;
+        background-size: 100% 25%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .price_background, .price_background.reverse {
+        background-color: #8A94D2;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        bottom: 0;
+    }
+
     footer .footer_info {
         flex-direction: column;
     }
@@ -1359,7 +1503,7 @@ a {
         display: none;
     }
 
-    .center_phone {
+    .center_phone, .center_phone.reverse {
         justify-content: center;
         align-items: center;
     }
