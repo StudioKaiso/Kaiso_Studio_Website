@@ -1,7 +1,7 @@
 const template = document.createElement("template");
 template.innerHTML = `
 <section style = "width: 100%; background-color: #F2F2F2" id = "price">
-	<div class = "drop_shadow center" style = "background-color: #FFFFFF; margin-bottom: 2rem; height: 16rem" >
+	<div class = "drop_shadow center" style = "position: relative; z-index: 1; background-color: #FFFFFF; margin-bottom: 2rem; height: 16rem" >
 		<div class = "margin center">
 		<h2 class = "w50-60-100 fr" style = "text-align: center">Chaque détail <span class = "red" style = "font-size: 1.8rem;">compte</span>. Imaginons ensemble de nouvelles perspectives.</h2>
 		<h2 class = "w50-60-100 eng" style = "text-align: center">Each detail <span class = "red" style = "font-size: 1.8rem;">counts</span>. Let's imagine new perspectives together.</h2>
