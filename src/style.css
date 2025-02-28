@@ -126,7 +126,7 @@ footer .logo {
     color: #8A94D2;
 }
 
-.red{
+.red {
     color: #BE0426;
 }
 
@@ -149,6 +149,15 @@ footer .logo {
 
 .banner_background {
     background-repeat: no-repeat;
+}
+
+.background_bloc_webdesign {
+    background-image: url('./Assets/WebDesign/MockUP_Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 .banner_background_webdesign {
@@ -174,8 +183,8 @@ footer .logo {
 }
 
 .gradient {
-    background: rgb(177, 166, 216);
-    background: linear-gradient(0deg, rgba(177, 166, 216, 1) 0%, rgba(166, 182, 215, 1) 100%);
+    background: rgb(173, 162, 211);
+    background: linear-gradient(0deg, rgba(173, 162, 211, 1) 0%, rgba(166, 182, 215, 1) 100%);
 }
 
 /*Burger Menu ------------------------------------------------------------------------*/
@@ -224,7 +233,9 @@ a {
 
 /*FIN Burger Menu -----------------------------------------------------------------*/
 
-.btn_base, .btn_red, .btn_violet {
+.btn_base,
+.btn_red,
+.btn_violet {
     padding: 0.5rem 1rem;
 
     border-radius: 2rem;
@@ -234,31 +245,32 @@ a {
     align-items: center;
 }
 
-.btn_base{
+.btn_base {
     background-color: #F2F2F2;
     color: #8A94D2;
     border-color: #F2F2F2;
 }
 
-.btn_red{
+.btn_red {
     background-color: #BE0426;
     color: #F2F2F2;
     border-color: #BE0426;
 }
 
-.btn_violet{
+.btn_violet {
     background-color: #8A94D2;
     color: #F2F2F2;
     border-color: #8A94D2;
 }
 
-.btn_base:hover, .btn_red:hover {
+.btn_base:hover,
+.btn_red:hover {
     background-color: #8A94D2;
     color: #F2F2F2;
     border-color: #8A94D2;
 }
 
-.btn_violet:hover{
+.btn_violet:hover {
     background-color: #FFFFFF;
     color: #8A94D2;
     border-color: #FFFFFF;
@@ -291,12 +303,20 @@ a {
     width: 40%;
 }
 
+.w40-50-100 {
+    width: 50%;
+}
+
 .w35-60-100 {
     width: 35%;
 }
 
 .w30-60-100 {
     width: 30%;
+}
+
+.max_width_desktop_40 {
+    max-width: 40%;
 }
 
 .home {
@@ -587,13 +607,20 @@ a {
     cursor: pointer;
 }
 
-.swiper-slide section{
+.swiper-slide section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3rem 0;
     height: 17rem;
 }
+
+.swiper-wrapper {
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
 /*FIN Drag Slideshow -----------------------------------------------------------------*/
 
 /*Services (Pedagogie + jeu mobile) cases -----------------------------------------------------------------*/
@@ -629,6 +656,13 @@ a {
 
 .service_image_01 {
     background-image: url("./Assets/Home/WebDesign.png");
+    background-size: cover;
+    right: 0;
+    background-position: center;
+}
+
+.webdesign_image_01 {
+    background-image: url("./Assets/WebDesign/MockUP_Dev.png");
     background-size: cover;
     right: 0;
     background-position: center;
@@ -688,7 +722,7 @@ a {
 .tag {
     background: #BE0426;
     color: #F2F2F2;
-    padding: 0.5rem 0.5rem;
+    padding: 0.2rem 1rem;
     border-radius: 5rem;
 }
 
@@ -750,7 +784,7 @@ a {
     width: 70%;
 }
 
-.padding-phone{
+.padding-phone {
     padding-top: 0;
 }
 
@@ -825,18 +859,20 @@ a {
     background-size: contain;
 }
 
-.call_icon, .v_icon, .world_icon{
+.call_icon,
+.v_icon,
+.world_icon {
     width: 0.7rem;
     height: 0.7rem;
     background: no-repeat;
     background-size: cover;
 }
 
-.call_icon{
+.call_icon {
     background-image: url('./Assets/Icons/Phone.svg');
 }
 
-.v_icon{
+.v_icon {
     width: 0.5rem;
     height: 0.5rem;
     background-image: url('./Assets/Icons/v.png');
@@ -845,13 +881,19 @@ a {
     margin-left: 0.5rem;
 }
 
-.world_icon{
+.world_icon {
     background-image: url('./Assets/Icons/World.png');
     margin-right: 0.5rem;
 }
 
-.english_phone{
+.english_phone {
     display: block;
+}
+
+.center_phone {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 /* ------------------- TABLET + PHONE ------------------- */
@@ -977,13 +1019,25 @@ a {
     }
 
     /*Menu burger FIN---------------------------------------------------------------------*/
+
+    .max_width_desktop_40 {
+        max-width: 100%;
+    }
 }
 
 /* ------------------- TABLET ------------------- */
 @media (min-width: 650px) and (max-width: 1023px) {
 
-    .w50-60-100, .w40-60-100, .w30-60-100, .w35-60-100, .w55-60-100 {
+    .w50-60-100,
+    .w40-60-100,
+    .w30-60-100,
+    .w35-60-100,
+    .w55-60-100 {
         width: calc(55% + 3rem);
+    }
+
+    .w40-50-100 {
+        width: 50%;
     }
 
     .logo {
@@ -1035,7 +1089,12 @@ a {
         text-align: center;
     }
 
-    .w50-60-100, .w40-60-100, .w30-60-100, .w35-60-100, .w55-60-100 {
+    .w50-60-100,
+    .w40-60-100,
+    .w30-60-100,
+    .w35-60-100,
+    .w55-60-100,
+    .w40-50-100 {
         width: 100%;
     }
 
@@ -1138,7 +1197,7 @@ a {
         width: 100%;
     }
 
-    .padding-phone{
+    .padding-phone {
         padding-top: 2rem;
     }
 
@@ -1160,7 +1219,10 @@ a {
         height: 8rem;
     }
 
-    .mike_background, .adrien_background, .isaac_background, .steeve_background {
+    .mike_background,
+    .adrien_background,
+    .isaac_background,
+    .steeve_background {
         background-image: none;
     }
 
@@ -1176,7 +1238,12 @@ a {
         padding-top: 2rem;
     }
 
-    .english_phone{
+    .english_phone {
         display: none;
+    }
+
+    .center_phone {
+        justify-content: center;
+        align-items: center;
     }
 }

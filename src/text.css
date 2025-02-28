@@ -40,6 +40,7 @@ h3 {
     font-family: 'Righteous', cursive;
     text-transform: uppercase;
     font-size: 1.25rem;
+    font-weight: 500;
 }
 
 h5 {
@@ -61,6 +62,12 @@ h6 {
     font-weight: 500;
     text-align: center;
     display: inline-flex;
+}
+
+.btn_neomorph{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
 }
 
 .btn:hover {

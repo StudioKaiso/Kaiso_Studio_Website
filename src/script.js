@@ -45,10 +45,10 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: nbSlides,
     spaceBetween: 0,
     loop: true,
-    speed: 5000,
+    speed: 10000,
     centeredSlides: true,
     autoplay: {
-        delay: 2000,
+        delay: 0,
         disableOnInteraction: false,
     },
 });
