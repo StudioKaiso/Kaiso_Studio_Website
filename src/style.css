@@ -139,6 +139,12 @@ footer .logo {
     background-attachment: fixed;
 }
 
+.price_arrow {
+    background-image: url("./Assets/Home/PriceBackground.png"); 
+    background-repeat: no-repeat;
+    height: 16rem; 
+}
+
 .drop_shadow {
     box-shadow: 4px 5px 20px 0px #1a326557, -11px -9px 44px #e0eaff;
 }
@@ -252,10 +258,30 @@ a {
     border-color: #BE0426;
 }
 
+.btn_violet{
+    padding: 0.5rem 1rem;
+
+    border-radius: 2rem;
+    border-width: 0.2rem;
+    border-style: solid;
+
+    align-items: center;
+
+    background-color: #8A94D2;
+    color: #F2F2F2;
+    border-color: #8A94D2;
+}
+
 .btn_base:hover, .btn_red:hover {
     background-color: #8A94D2;
     color: #F2F2F2;
     border-color: #8A94D2;
+}
+
+.btn_violet:hover {
+    background-color: #FFFFFF;
+    color: #8A94D2;
+    border-color: #FFFFFF;
 }
 
 .btn_neomorph {
