@@ -169,7 +169,13 @@ footer .logo {
 .banner_background_webdesign {
     background-image: url("./Assets/WebDesign/MockUP_ordi.png");
     background-position: bottom right;
-    background-size: 70%;
+    background-size: 90%;
+}
+
+.banner_background_branding {
+    background-image: url('./Assets/Branding/MockUP_Tablet.png');
+    background-position: bottom right;
+    background-size: 90%;
 }
 
 .banner_background_africa {
@@ -674,11 +680,26 @@ a {
     background-position: center;
 }
 
-.service_image_02 {
-    background-image: url("./Assets/Home/Branding.png");
-    background-size: cover;
+.branding_case {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+
+    background-color: #F2F2F2;
+    margin-top: 3rem;
+}
+
+.branding_image_R {
+    right: 0;
+    top: 0;
+    background-color: #f2f2f2;
+}
+
+.branding_image_L {
     left: 0;
-    background-position: center;
+    top: 0;
+    background-color: #f2f2f2;
 }
 
 .service_image_03 {
@@ -1028,6 +1049,17 @@ a {
 
     .max_width_desktop_40 {
         max-width: 100%;
+    }
+
+    .branding_case {
+        margin-top: 2rem;
+        border-radius: 0;
+
+        flex-direction: column-reverse;
+    }
+
+    .branding_image_L, .branding_image_R{
+        width: 100%;
     }
 }
 
