@@ -75,16 +75,18 @@ var swiper2 = new Swiper(".mySwiper2", {
 });
 
 //Scroll to prices
-document.querySelectorAll(".scrollButton").forEach(button => {
-    button.addEventListener("click", function (event) {
-        event.preventDefault(); // Empêche tout comportement par défaut (utile pour les liens)
-        
-        const target = document.getElementById("price");
-        if (target) {
-            const yOffset = target.getBoundingClientRect().top + window.scrollY; // Position Y de la div
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".scrollButton").forEach(button => {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+            
+            const target = document.getElementById("price");
+            if (target) {
+                const yOffset = target.getBoundingClientRect().top + window.scrollY;
 
-            window.scrollTo({ top: yOffset, behavior: "smooth" });
-        }
+                window.scrollTo({ top: yOffset, behavior: "smooth" });
+            }
+        });
     });
 });
 
