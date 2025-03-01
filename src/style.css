@@ -12,6 +12,11 @@ html {
     overflow-x: hidden;
 }
 
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth; /* Ajoute un défilement fluide global */
+}
+
 ::selection {
     background: #BE0426;
     color: #F2F2F2;
