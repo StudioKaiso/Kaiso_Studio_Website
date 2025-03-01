@@ -82,14 +82,6 @@ header nav {
     background-image: url("./Assets/Icons/Mail.svg");
 }
 
-#icon_05 {
-    background-image: url("./Assets/Formation/Qualiopi_certification.png");
-}
-
-#icon_06 {
-    background-image: url("./Assets/Formation/Qualiopi_certification.png");
-}
-
 footer .logo {
     background-image: url("./Assets/Logo_vertical_sansStudio.png");
     width: 3rem;
@@ -247,18 +239,6 @@ footer .logo {
     background-image: url('./Assets/GameDesign/MockUP_Phones.png');
     background-position: bottom right;
     background-size: 80%;
-}
-
-.banner_background_africa {
-    background-image: url("./Assets/Africa/Africa_phones_background.png");
-    background-position: 50vw -5rem;
-    background-size: 50rem;
-
-    position: absolute;
-    width: 120%;
-    height: 120%;
-
-    z-index: 0;
 }
 
 .article_home {
@@ -861,15 +841,6 @@ a {
     background-position: center;
     color: white;
 }
-
-.case-one {
-    background-image: url("./Assets/Africa/CoupeTouilleMiniature.png");
-}
-
-.case-two {
-    background-image: url("./Assets/Africa/TeteCreuxMiniature.png");
-}
-
 
 .case>div {
     display: flex;
