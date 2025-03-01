@@ -75,11 +75,24 @@ var swiper2 = new Swiper(".mySwiper2", {
 });
 
 //Scroll to prices
+/*
 document.querySelectorAll(".scrollButton").forEach(button => {
     button.addEventListener("click", function () {
         document.getElementById("price").scrollIntoView({
             behavior: "smooth"
         });
+    });
+});*/
+
+document.querySelectorAll(".scrollButton").forEach(button => {
+    button.addEventListener("click", function () {
+        if (navigator.userAgent.match(/(Android)/)) {
+            window.scrollTo(0, document.getElementById("price")[0].offsetTop);
+        } else {
+            document.getElementById("price").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
     });
 });
 
