@@ -2,7 +2,7 @@
   "scripts": {
     "start": "parcel ./src/index.html",
     "build:parcel": "parcel build ./src/index.html --public-url ./ --no-source-maps --dist-dir ./docs",
-    "build": "npm run build:parcel --no-minify"
+    "build": "npm run build:parcel"
   },
   "dependencies": {
     "gsap": "^3.12.5",
