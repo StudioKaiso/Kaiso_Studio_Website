@@ -76,10 +76,15 @@ var swiper2 = new Swiper(".mySwiper2", {
 
 //Scroll to prices
 document.querySelectorAll(".scrollButton").forEach(button => {
-    button.addEventListener("click", function () {
-        setTimeout(() => {
-            document.getElementById("price").scrollIntoView({ behavior: "smooth"});
-        }, 100);
+    button.addEventListener("click", function (event) {
+        event.preventDefault(); // Empêche tout comportement par défaut (utile pour les liens)
+        
+        const target = document.getElementById("price");
+        if (target) {
+            const yOffset = target.getBoundingClientRect().top + window.scrollY; // Position Y de la div
+
+            window.scrollTo({ top: yOffset, behavior: "smooth" });
+        }
     });
 });
 
