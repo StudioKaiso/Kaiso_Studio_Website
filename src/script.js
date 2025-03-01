@@ -75,15 +75,15 @@ var swiper2 = new Swiper(".mySwiper2", {
 });
 
 //Scroll to prices
-/*
 document.querySelectorAll(".scrollButton").forEach(button => {
     button.addEventListener("click", function () {
-        document.getElementById("price").scrollIntoView({
-            behavior: "smooth"
-        });
+        setTimeout(() => {
+            document.getElementById("price").scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100); // Petit délai pour s'assurer que l'événement est bien pris en compte
     });
-});*/
+});
 
+/*
 document.querySelectorAll(".scrollButton").forEach(button => {
     button.addEventListener("click", function () {
         if (navigator.userAgent.match(/(Android)/)) {
@@ -94,7 +94,7 @@ document.querySelectorAll(".scrollButton").forEach(button => {
             });
         }
     });
-});
+});*/
 
 /*
 //LE DESIGN C'EST QUOI HREF ------------------------------------------------------------------------------
