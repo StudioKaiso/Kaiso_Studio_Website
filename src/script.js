@@ -79,7 +79,7 @@ document.querySelectorAll(".scrollButton").forEach(button => {
     button.addEventListener("click", function () {
         setTimeout(() => {
             document.getElementById("price").scrollIntoView({ behavior: "smooth"});
-        }, 100); // Petit délai pour s'assurer que l'événement est bien pris en compte
+        }, 100);
     });
 });
 
