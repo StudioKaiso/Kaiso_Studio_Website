@@ -22,9 +22,9 @@ template.innerHTML = `
         <h5 class="fr">À propos</h5>
         <h5 class="eng">About us</h5>
         <ul style="margin-top: 0.5rem;">
-            <a style="text-decoration-line: underline;" href="./Team.html"><li>Branding</li></a>
-            <a style="text-decoration-line: underline;" href="./Team.html"><li>Web Design</li></a>
-            <a style="text-decoration-line: underline;" href="./Team.html"><li>Game Design</li></a>
+            <a style="text-decoration-line: underline;" href="./Branding.html"><li>Branding</li></a>
+            <a style="text-decoration-line: underline;" href="./WebDesign.html"><li>Web Design</li></a>
+            <a style="text-decoration-line: underline;" href="./GameDesign.html"><li>Game Design</li></a>
         </ul>
     </section>
 </div>
@@ -50,8 +50,8 @@ template.innerHTML = `
     </a>
 
     <div class="center">
-        <a style="text-decoration-line: underline;" href="./Team.html"><p style="margin-right: 0.5rem;">Mentions légales</p></a>
-        <a style="text-decoration-line: underline;" href="./Team.html"><p style="margin-left: 0.5rem;">Confidentialités</p></a>
+        <a style="text-decoration-line: underline;" href="./Mentions.html"><p class="fr" style="margin-right: 0.5rem;">Mentions légales</p><p class="eng" style="margin-right: 0.5rem;">Legal Notice</p></a>
+        <a style="text-decoration-line: underline;" href="./Confidentialite.html"><p class="fr" style="margin-left: 0.5rem;">Confidentialités</p><p class="eng" style="margin-left: 0.5rem;">Privacy</p></a>
     </div>
 
     <p>©Kaiso Studio</p>

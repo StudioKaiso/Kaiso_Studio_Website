@@ -1023,6 +1023,7 @@ a {
     position: absolute; 
     right: -20%; 
     bottom: -60%;
+    scale: 1;
 }
 
 .rotate_Tablet, .rotate_Tablet2{
@@ -1265,7 +1266,8 @@ a {
     .phone_pos{
         position: absolute;  
         right: 0%;
-        bottom: -130%;
+        bottom: -100%;
+        scale: 0.7;
     }
 
     .rotate_Tablet{
