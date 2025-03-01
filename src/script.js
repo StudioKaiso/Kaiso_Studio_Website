@@ -75,18 +75,9 @@ var swiper2 = new Swiper(".mySwiper2", {
 });
 
 //Scroll to prices
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".scrollButton").forEach(button => {
-        button.addEventListener("click", function (event) {
-            event.preventDefault();
-            
-            const target = document.getElementById("price");
-            if (target) {
-                const yOffset = target.getBoundingClientRect().top + window.scrollY;
-
-                window.scrollTo({ top: yOffset, behavior: "smooth" });
-            }
-        });
+document.querySelectorAll(".scrollButton").forEach(button => {
+    button.addEventListener("click", function () {
+        document.getElementById("price").scrollIntoView({ behavior: "smooth" });
     });
 });
 
