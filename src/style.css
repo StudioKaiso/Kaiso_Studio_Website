@@ -1156,7 +1156,7 @@ a {
 }
 
 /* ------------------- TABLET ------------------- */
-@media (min-width: 650px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 
     .w50-60-100,
     .w40-60-100,
@@ -1257,7 +1257,7 @@ a {
 }
 
 /* ------------------- PHONE ------------------- */
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     .home {
         margin-top: 20vmax;
         margin-bottom: 40vmax;
